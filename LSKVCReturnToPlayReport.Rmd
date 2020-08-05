@@ -14,8 +14,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 \newpage
-# Weird change for github check
-
 # Motivation
 
 This document aims to support LSKVC in their organisation and running of official LSKVC outdoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
