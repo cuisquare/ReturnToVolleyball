@@ -118,8 +118,6 @@ Example 2: in the case of a 6v6 play on a 8mx8m court, for a set duration of 20 
 
 Based on this it is possible to calculate the maximum advisable number of sets per player depending on the chosen acceptable virus exposure per session. As a default in this risk assessment, the acceptable total exposure per session was considered to be the same as the VE study, 5 minutes. Of note that this is lower than the 15 minutes maximum set out by gvt as the limit for Medium risk from exposure.  
 
-max_nb_sets <- max_allowed_exp / get_set_exposure_VEAsRef(court_side, nb_per_team,set_length)
-
 $$N_{set}^{max} =\frac{T_{e}^{max}}{T_{set}\frac{N_{team}}{L^2}r_e^*} $$
 
 It is necessary that the $N_{set}^{max}$ is obtained from the results table below and enforced either organically by a careful choice of session duration and numbers cap of by monitoring as an alternative.
