@@ -18,22 +18,22 @@ knitr::opts_chunk$set(echo = TRUE)
 
 This document aims to support LSKVC in their organisation and running of official LSKVC outdoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
 
-The first section (Club Requirements Draft) will outline proposed measures to be put in place by the club in the organisation of outdoor session. The second section (Players Rules Draft) outlines what will be sent  to players with the expectation of compliance. 
+The **Club Requirements Draft** section outlines proposed measures to be put in place by the club in the organisation of outdoor session. The **Players Rules Draft** section outlines what will be sent to players with the expectation of compliance. 
 
 The Club Requirements and Player Rules are made of:
 
-* Rules and obligations for the club as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
+* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
 During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
 * Additional specific rules based on our specific Risk Assessment (see below)
 
-The third section (Risk Assessment) outlines the specific risk assessment for our activity on top of the Volleyball England Risk Assessment which is generic (references to the Volleyball England documents are at the end of that section). 
+The **Risk Assessment** section outlines the specific risk assessment for our activity on top of the Volleyball England Risk Assessment which is generic (references to the Volleyball England documents are at the end of that section). 
 
 The Risk Assessment is based on:
 
 * Volleyball England Return to Outdoor Volleyball Specific Action Plan ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20sport%20specific%20action%20plan.pdf))
 * Return to recreational team sport framework ([link](https://www.gov.uk/government/publications/coronavirus-covid-19-guidance-on-phased-return-of-sport-and-recreation/return-to-recreational-team-sport-framework))
 
-The last section (Logistics Considerations) contains considerations for us to decide on how we can plan to run the session, volunteers required, etc. 
+The **Logistics Considerations** contains considerations for us to decide on how we can plan to run the session, volunteers required, etc. 
 
 
 \newpage
