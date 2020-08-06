@@ -95,7 +95,7 @@ safety_factor <- 1.5
 * Ensure that the player rules below are enforced, on penalty of refusing access to players who either refuse or repeatedly neglect to follow the rules
 * Wipe equipment (mainly balls) before and after each set
 * Provide sanitising at any time during the play upon player request
-* Control the length of sets – maximum of 15 points or 15 minutes with golden points whichever comes first. 
+* Control the length of sets – maximum of 15 points or first team to 17. 
 * Control the number of sets played by individual players – maximum of **`r round(get_max_nb_sets_per_player(8,6,20,safety_factor,max_exposure))` sets** if we play 6v6 (*`r round(get_max_nb_sets_per_player(8,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(8,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
 * Control the number of participants. If unregistered participants ask to join on the day, it must be within the 30 cap and they must abide by the rules including provide up to date contact information before they can play. It would be easier organisation wise not to allow unregistered players to join the session unless we have enough organisers to provide that service.
 
