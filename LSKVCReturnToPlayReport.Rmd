@@ -121,7 +121,7 @@ safety_factor <- 1.5
 * Congratulatory touches are not permitted
 * Players should not to touch their face, mouth, nose or eyes. 
 * Shouting should be avoided.
-* Sets will be capped at **15 points** or **20 minutes** with golden point whichever happens first.
+* Sets will be capped at **15 points** with 2 points difference of first team to 17 points.
 * Each player can play a maximum of **`r round(get_max_nb_sets_per_player(8,6,20,safety_factor,max_exposure))` sets** if we play 6v6 (*`r round(get_max_nb_sets_per_player(8,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(8,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
 * Any participants not on court must maintain social distancing. Any seating arrangement (where you keep your stuff) should be 2m away from the next persons. 
 * Water and drinks should not be shared
@@ -458,7 +458,7 @@ The session should have a fixed length because of the requirement for the organi
 
 The number of users is capped at 30 total by Return to Sport guidance and this include the organisers on the day. The number of players we can take in will depend on how many organisers run the session. I have set the max number of players to 26 reserving effectively 4 spaces for organisers.
 
-The duration of set is not fixed by duration but based on number of points. Namely all calculations use the figure 20 minutes for a set, which should be achieved by setting the max number of points to 15 points. This should be monitored on the day and time be controlled if necessary.
+The duration of set is not fixed by duration but based on number of points. Namely all calculations use the figure 20 minutes for a set, which should be achieved by setting the max number of points to 15 points (or first team to 17). This should be monitored on the day to see if the assumption holds well.
 
 ## Session possible Configurations
 
