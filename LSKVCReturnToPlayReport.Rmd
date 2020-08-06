@@ -148,7 +148,7 @@ An estimation of the virus exposure is derived as a function of the court size, 
 A reference weighted exposure $r_e^*$ is derived by considering duration of exposure per duration of playing time per player per court surface. The values for the Volleyball England study were an exposure time $Te^*=1min$ per set of $T{play}^*=20min$. The court side was $L^*=9m$ and the number of players per team was $N_{team}^*=6$. 
 
 
-$$r_e^*=\frac{T_e^*}{T_{plsy}^*\frac{N_{team}^*}{L^{*2}}}$$
+$$r_e^*=\frac{T_e^*}{T_{play}^*\frac{N_{team}^*}{L^{*2}}}$$
 
 To obtain the duration of exposure $Te$ for our specific park activity, we multiply the reference weighted exposure by the parameters corresponding to our specific activity : $T_{play}$ play duration in minutes, court side $L$ in metres and $N_{team}$ the number of players per team.
 
