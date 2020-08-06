@@ -42,8 +42,8 @@ The **Logistics Considerations** contains considerations for us to decide on how
 
 ## Prior to Activity:
 * Create a Facebook or Teamer event. This event should come with a description of the session.
-* Numbers of players to be capped at *26 players TBC* depending how many organisers we expect. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 30. 
-* The session should have a clear start and finish set in the facebook/teamer event and be such that club organisers can realistically attend throughout fulfilling their roles managing the session. A reasonable duration would be *4 hours TBC*.
+* Numbers of players to be capped at **26 players** to allow for 4 spaces reserved for organisers. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 30. 
+* The session should have a clear start and finish set in the facebook/teamer event and be such that club organisers can realistically attend throughout fulfilling their roles managing the session. A reasonable duration would be **4 hours**.
 * The invite should include a link to read the players rules (draft written below)
 * Roles in setting up /setting down / help run session should be identified
 * Procure hand sanitising bottles sufficient for the activity: one home size bottle for each side of the court, one for the seating area, 3 total. Sanitising wipes might be more practical.
@@ -76,33 +76,6 @@ The **Logistics Considerations** contains considerations for us to decide on how
 * Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 
 * You should remember to follow all current UK Government guidances (insert link) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
 * Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf
-
-## During Activity:
-* Each player will have to sanitise hands before the start and after the end of each set.
-* Congratulatory touches are not permitted
-* Players should not to touch their face, mouth, nose or eyes. 
-* Shouting should be avoided.
-* Sets will be capped at **15 points TBC** or **15 minutes TBC** with golden point whichever happens first.
-* Games will be **5 vs 5 TBC** players max.
-* You can play a maximum of **6 sets TBC** total
-* Any participants not on court must maintain social distancing. Any seating arrangement (where you keep your stuff) should be 2m away from the next persons. 
-* Water and drinks should not be shared
-
-## After the Activity:
-* Sanitise your hands after the completion of activity
-* Leave the playing area whilst maintaining social distancing.
-* If you have not done so yet please provide up to date contact details before leaving. It will be kept for 21 days to provide track and trace 
-
-\newpage
-# Risk Assessment
-
-## Background
-
-We are looking to adapt the measures from the ones outlined by the return to sport document as a minimum, to one that compensate for aspects of our play that differs from the conditions under which the analysis was made. VE analysis was ran as mandated by gvt Return to Sport. See references for links to those. 
-
-VE study concluded that a normal volleyball game of 6v6 on a 9 by 9 metres court would result in a 1 minutes per 20m set virus exposure for each player, totaling 5 minutes exposure for a full 5 sets game. This was used to justify the exposure risk as being medium as defined by Return to Sport. This approach was accepted and validated by the sport governing body. We have based the risk assessment in the play configurations required to attain a similar level of exposure to the virus as the one in the study.
-
-## Method
 
 ```{r source_functions, echo=FALSE,message=FALSE, warning=FALSE}
 options(digits = 2)   # report 3 significant digits
@@ -137,8 +110,33 @@ longnames <- c("Cases Description",
 definitions <- data.frame(Abbrevation = shortnames, Definition = longnames)
 ```
 
+## During Activity:
+* Each player will have to sanitise hands before the start and after the end of each set.
+* Congratulatory touches are not permitted
+* Players should not to touch their face, mouth, nose or eyes. 
+* Shouting should be avoided.
+* Sets will be capped at **15 points** or **20 minutes** with golden point whichever happens first.
+* Each player can play a maximum of **`r round(get_max_nb_sets_per_player(8,6,20,1.5,10))` sets** if we play 6v6, **`r round(get_max_nb_sets_per_player(8,5,20,1.5,10))` sets** total if we play 5v5 and **`r round(get_max_nb_sets_per_player(8,4,20,1.5,10))` sets** total if we play 4v4.
+* Any participants not on court must maintain social distancing. Any seating arrangement (where you keep your stuff) should be 2m away from the next persons. 
+* Water and drinks should not be shared
 
-I have derived an estimation of the virus exposure as a function of the court size, number of players per team and set duration. VE Study was for 6v6 game in a 9 metres x 9 metres court. Basically if the court gets smaller, or the number of players increases, then the exposure increases.
+## After the Activity:
+* Sanitise your hands after the completion of activity
+* Leave the playing area whilst maintaining social distancing.
+* If you have not done so yet please provide up to date contact details before leaving. It will be kept for 21 days to provide track and trace 
+
+\newpage
+# Risk Assessment
+
+## Background
+
+We are looking to adapt the measures from the ones outlined by the return to sport document as a minimum, to one that compensate for aspects of our play that differs from the conditions under which the analysis was made. VE analysis was ran as mandated by gvt Return to Sport. See references for links to those. 
+
+VE study concluded that a normal volleyball game of 6v6 on a 9 by 9 metres court would result in a 1 minutes per 20m set virus exposure for each player, totaling 5 minutes exposure for a full 5 sets game. This was used to justify the exposure risk as being medium as defined by Return to Sport. This approach was accepted and validated by the sport governing body. We have based the risk assessment in the play configurations required to attain a similar level of exposure to the virus as the one in the study.
+
+## Method
+
+An estimation of the virus exposure is derived as a function of the court size, number of players per team and set duration. VE Study was for 6v6 game in a 9 metres x 9 metres court. Basically if the court gets smaller, or the number of players increases, then the exposure increases.
 
 A reference weighted exposure $r_e^*$ is derived by considering duration of exposure per duration of playing time per player per court surface. The values for the Volleyball England study were an exposure time $Te^*=1min$ per set of $T{play}^*=20min$. The court side was $L^*=9m$ and the number of players per team was $N_{team}^*=6$. 
 
@@ -170,8 +168,6 @@ Based on this it is possible to calculate the maximum advisable number of sets p
 
 $$N_{set}^{max} =\frac{T_{e}^{max}}{T_{set}\frac{N_{team}}{L^2}r_e^*S_f} $$
 
-It is necessary that the $N_{set}^{max}$ is obtained from the results table below and enforced either organically by a careful choice of session duration and numbers cap of by monitoring as an alternative.
-
 Example 1 (continued): in the case of a 6v6 play on a 9mx9m court, for a set duration of 15 minutes, the maximum number of sets per player will be $N_{set}^{max}=$ `r get_max_nb_sets_per_player(9,6,15,1.0,5)` sets. This is a bit more than the 5 sets in the VE reference because the sets are shorter, everything else being equal.
 
 Example 2 (continued): in the case of a 6v6 play on a 8mx8m court, for a set duration of 20 minutes, the maximum number of sets per player will be $N_{set}^{max}=$ `r get_max_nb_sets_per_player(8,6,20,1.0,5)` sets. This is a bit less than the 5 sets in the VE reference because the court is smaller, everything else being equal. 
@@ -181,6 +177,8 @@ Example 3 (continued): in the case of a 6v6 play on a 8mx8m court, for a set dur
 As a default in this risk assessment, the acceptable total exposure per session was considered to be **`r max_exposure` minutes**. This compares to the value of *5 minutes* measured for the VE study and *15 minutes* for the Return to Sport maximum for a Medium risk.   
 
 The rationale for that choice is that we want to remain under the value mandated by government for a medium risk (as this is a requirement of return to sport) with some allowance.
+
+It is necessary that the $N_{set}^{max}$ is obtained from the results table below and enforced either organically by a careful choice of session duration and numbers cap of by monitoring as an alternative.
 
 ## Results
 
@@ -210,8 +208,8 @@ nb_players <-30
 play_cases_singlenet <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
 
 for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(15,20)){
-    for (nb_courts in c(1)) {
+  for (set_duration in c(20)){
+    for (nb_courts in c(1,2)) {
       play_cases_singlenet <- play_cases_singlenet  %>%  
         bind_rows(get_new_play_case_input(8,
                                           nb_player_team,
@@ -240,50 +238,9 @@ colnames(play_cases_singlenet) <- shortnames
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 30 players - Single Net") %>%
+kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 30 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
-  add_header_above(c(" " = 1, "Inputs" = 6, "Ouputs" = 4)) #%>%  landscape()
-
-``` 
-
-```{r generate_play_cases_4by4_30, echo=FALSE,message=FALSE, warning=FALSE}
-#adding input values
-play_cases_4by4 <- data.frame()#get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
-
-for (nb_player_team in c(4)) {
-  for (set_duration in c(15,20)){
-    for (nb_courts in c(1,2,3)) {
-      play_cases_4by4 <- play_cases_4by4  %>%  
-        bind_rows(get_new_play_case_input(8,
-                                          nb_player_team,
-                                          set_duration,
-                                          safety_factor,
-                                          max_exposure,
-                                          nb_players,
-                                          nb_courts,
-                                          "LSKVC "))
-    }
-  }
-}  
-
-
-
-#adding calculated values
-play_cases_4by4 <- add_calculated_values(play_cases_4by4)
-
-
-#rename columns
-colnames(play_cases_4by4) <- shortnames
-```
-
-```{r add_results_table_4by4_30, echo=FALSE,message=FALSE, warning=FALSE}
-#adding results table
-library(knitr)
-library(kableExtra)
-
-kable(x=play_cases_4by4,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 30 players - 4v4 -  2 and 3 Nets") %>%
-  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
-  add_header_above(c(" " = 1, "Inputs" = 6, "Ouputs" = 4)) #%>%  landscape()
+  add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
 
 ``` 
 
@@ -299,8 +256,8 @@ nb_players <-24
 play_cases_singlenet <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
 
 for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(15,20)){
-    for (nb_courts in c(1)) {
+  for (set_duration in c(20)){
+    for (nb_courts in c(1,2)) {
       play_cases_singlenet <- play_cases_singlenet  %>%  
         bind_rows(get_new_play_case_input(8,
                                           nb_player_team,
@@ -329,49 +286,9 @@ colnames(play_cases_singlenet) <- shortnames
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 24 players - Single Net") %>%
+kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 24 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
-  add_header_above(c(" " = 1, "Inputs" = 6, "Ouputs" = 4)) #%>%  landscape()
-
-``` 
-
-
-```{r generate_play_cases_4by4_24, echo=FALSE,message=FALSE, warning=FALSE}
-#adding input values
-play_cases_4by4 <- data.frame()#get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
-
-for (nb_player_team in c(4)) {
-  for (set_duration in c(15,20)){
-    for (nb_courts in c(1,2,3)) {
-      play_cases_4by4 <- play_cases_4by4  %>%  
-        bind_rows(get_new_play_case_input(8,
-                                          nb_player_team,
-                                          set_duration,
-                                          safety_factor,
-                                          max_exposure,
-                                          nb_players,
-                                          nb_courts,
-                                          "LSKVC "))
-    }
-  }
-}  
-
-#adding calculated values
-play_cases_4by4 <- add_calculated_values(play_cases_4by4)
-
-
-#rename columns
-colnames(play_cases_4by4) <- shortnames
-```
-
-```{r add_results_table_4by4_24, echo=FALSE,message=FALSE, warning=FALSE}
-#adding results table
-library(knitr)
-library(kableExtra)
-
-kable(x=play_cases_4by4,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 24 players - 4v4 -  2 and 3 Nets") %>%
-  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
-  add_header_above(c(" " = 1, "Inputs" = 6, "Ouputs" = 4)) #%>%  landscape()
+  add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
 
 ``` 
 
@@ -386,8 +303,8 @@ nb_players <-12
 play_cases_singlenet <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
 
 for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(15,20)){
-    for (nb_courts in c(1)) {
+  for (set_duration in c(20)){
+    for (nb_courts in c(1,2)) {
       play_cases_singlenet <- play_cases_singlenet  %>%  
         bind_rows(get_new_play_case_input(8,
                                           nb_player_team,
@@ -415,9 +332,9 @@ colnames(play_cases_singlenet) <- shortnames
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 12 players - Single Net") %>%
+kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 12 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
-  add_header_above(c(" " = 1, "Inputs" = 6, "Ouputs" = 4)) #%>%  landscape()
+  add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
 
 ``` 
 
@@ -431,8 +348,8 @@ nb_players <-8
 play_cases_singlenet <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
 
 for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(15,20)){
-    for (nb_courts in c(1)) {
+  for (set_duration in c(20)){
+    for (nb_courts in c(1,2)) {
       play_cases_singlenet <- play_cases_singlenet  %>%  
         bind_rows(get_new_play_case_input(8,
                                           nb_player_team,
@@ -461,9 +378,9 @@ colnames(play_cases_singlenet) <- shortnames
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 8 players - Single Net") %>%
+kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 8 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
-  add_header_above(c(" " = 1, "Inputs" = 6, "Ouputs" = 4)) #%>%  landscape()
+  add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
 
 ``` 
 
@@ -473,8 +390,8 @@ kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption
 play_cases <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
 
 for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(15,20)){
-    for (nb_courts in c(1,2,3)) {
+  for (set_duration in c(20)){
+    for (nb_courts in c(1,2)) {
       for (nb_players in c(8,12,24,30)) {
         play_cases <- play_cases  %>%  
           bind_rows(get_new_play_case_input(8,
@@ -512,11 +429,11 @@ library(kableExtra)
 
 # kable(x=play_cases,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - All") %>%
 #   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
-#   add_header_above(c(" " = 1, "Inputs" = 6, "Ouputs" = 4))
+#   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4))
 
 kable(x=play_cases,format = "latex", booktabs = T, longtable = T,linesep = "",caption="Park Play Configurations - All") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position","repeat_header"))%>%
-  add_header_above(c(" " = 1, "Inputs" = 6, "Ouputs" = 4))
+  add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4))
 
 ``` 
 
@@ -540,33 +457,13 @@ First line is the case reproducing the results obtained from measurement by Voll
 
 The session should have a fixed length because of the requirement for the organisers to be there from start to finish – it would not be reasonable to expect organisers to stay on for a session of unknown length. Capping the number of sets per player would also help on that.
 
-The number of users is capped at 30 total by Return to Sport guidance and this include the organisers on the day. The number of players we can take in will depend on how many organisers run the session. 
+The number of users is capped at 30 total by Return to Sport guidance and this include the organisers on the day. The number of players we can take in will depend on how many organisers run the session. I have set the max number of players to 26 reserving effectively 4 spaces for organisers.
+
+The duration of set is not fixed by duration but based on number of points. Namely all calculations use the figure 20 minutes for a set, which should be achieved by setting the max number of points to 15 points. This should be monitored on the day and time be controlled if necessary.
 
 ## Session possible Configurations
 
-### Large Session: 30 players
-
-For large sessions of 30 players, the most manageable configuration uses 2 or 3 nets, as it corresponds to shorter sessions and greater number of sets allowed per player. With only 1 net, the maximum number of sets per player has to be 5-6.
-
-#### Single net configurations
-
-With a single net, the best results are for sets timed at 15 minutes. The options are 6x6 with maximum of 5 sets per player, or 5x5 with maximum of 6 sets per player. The sessions are on the lengthy side.
-
-#### 4x4 configurations
-
-This option allow for a lot more play because of the lowest exposure due to less people on court. However this is not viable with less than 2 nets because the session would be longer than 5 hours.
-
-### Medium Session: 24 players
-
-For a sessions of 24 players the conclusions are the same as with 30 players, it is however more manageable in terms of session duration.
-
-### Small Session: 12 players
-For session of 12 players the best configuration is 4v4 for a single net. More than 1 net is wasteful as 4 players only are off court.
-
-### Minimal Session: 8 players
-For session of 8 players players can play the whole session without interruption 4v4.
-
-As seen in results, 30 players session are only manageable with at least 2 nets because a single net means either a relatively small number of maximum set per player (5-6) which would need to be controlled, or very long sessions because of the court overcrowding. Smaller session are attractive because more manageable both in terms of controlling the number of sets played by individual player, rotation of players, and duration of the session being reduced. This could work well in a situation where indoor summer training is not on. 
+The most manageable configuration for players numbers 24 and above uses 2 nets, as it corresponds to shorter sessions.
 
 It would be potentially a good solution to run several sessions per week including mid week for groups of 8-12 people.
 
