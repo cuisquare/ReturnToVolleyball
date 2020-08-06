@@ -71,11 +71,13 @@ The **Logistics Considerations** contains considerations for us to decide on how
 # Players Rules (Draft)
 
 ## Prior to Activity:
-* Let us know you plan to attend the activity. This can be made by replying to the event created on Facebook. Numbers are capped at tbc 26, if you have not let us know you are coming, you might not be able to join the activity on the day if numbers are reached.
+* Let us know you plan to attend the activity. This can be made by replying to the event created on Facebook. Numbers are capped at 26, if you have not let us know you are coming, you might not be able to join the activity on the day if numbers are reached.
+* Before you attend you need to opt-in to, confirming that you read and understood the risk assessment and agree with the residual risk involved in the activity. Please get in touch with any questions you might have.
 * Whether in advance or on the day, you have to provide up to date contact information – mobile number as a minimum. This is for track and trace.
 * Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 
 * You should remember to follow all current UK Government guidances (insert link) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
 * Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf
+
 
 ```{r source_functions, echo=FALSE,message=FALSE, warning=FALSE}
 options(digits = 2)   # report 3 significant digits
@@ -124,6 +126,7 @@ definitions <- data.frame(Abbrevation = shortnames, Definition = longnames)
 * Sanitise your hands after the completion of activity
 * Leave the playing area whilst maintaining social distancing.
 * If you have not done so yet please provide up to date contact details before leaving. It will be kept for 21 days to provide track and trace 
+* If you have suggestions on running the session or observed something you think could be improved especially in terms of safety please get in touch with the organisers
 
 \newpage
 # Risk Assessment
