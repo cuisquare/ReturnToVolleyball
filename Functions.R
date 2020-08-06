@@ -48,8 +48,8 @@ get_pretty_length <- function(minutes) {
 }
 
 add_calculated_values <- function(play_cases_input) {
-  max_max_playtime <- 4*60 #max player time in minutes
-  max_session_length <- 5*60 #max session length in minutes
+  max_max_playtime <- 7*60 #max player time in minutes
+  max_session_length <- 7*60 #max session length in minutes
   
   play_cases_output <- play_cases_input %>%
     filter(nb_tot>=2*nb_per_team*nb_courts) %>%
