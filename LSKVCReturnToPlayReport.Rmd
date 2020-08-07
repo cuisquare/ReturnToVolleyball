@@ -177,7 +177,7 @@ As a default in this risk assessment, the acceptable total exposure per session 
 
 The rationale for that choice is that we want to remain under the value mandated by government for a medium risk (as this is a requirement of return to sport) with some allowance.
 
-It is necessary that the $N_{set}^{max}$ is obtained from the results table below and enforced either organically by a careful choice of session duration and numbers cap of by monitoring as an alternative.
+It is necessary that the $N_{set}^{max}$ is obtained from the results table below and enforced either organically by a careful choice of session duration and numbers cap or by monitoring as an alternative.
 
 ## Results
 
