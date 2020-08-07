@@ -154,9 +154,10 @@ To obtain the duration of exposure $Te$ for our specific park activity, we multi
 
 We also multiply that exposure time by a safety factor equal to `r safety_factor` to account for a scrappier play in the park compared to what was obtained the in VE study which was quoted in the webinar held on 06/08 to be national league finals games.
 
+$$T_e =T_{play}\frac{N_{team}}{L^2}r_e^*S_f$$
+
 Obviously this choice constitutes an educated guess, and the actual exposure time should be validated by observation of typical park play which is an exercise that has not been carried out so far.
 
-$$T_e =T_{play}\frac{N_{team}}{L^2}r_e^*S_f$$
 Example 1: in the case of a 6v6 play on a 9mx9m court, for a set duration of 15 minutes, the exposure will be $Te^*=$ `r get_set_exposure_VEAsRef(9,6,15,1.0) ` minutes - the exposure is a bit less than the VE reference of 1 minute because  the set is shorter, everything else being equal.
 
 Example 2: in the case of a 6v6 play on a 8mx8m court, for a set duration of 20 minutes, the exposure will be $Te^*=$ `r get_set_exposure_VEAsRef(8,6,20,1.0) ` minutes - the exposure is a bit larger than the VE reference of 1 minute because the court is smaller, everything else being equal.
