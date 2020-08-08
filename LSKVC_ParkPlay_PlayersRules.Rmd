@@ -40,13 +40,13 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 * Before you attend you need to opt-in to the present rules, confirming that you read and understood them as well as the risk assessment and agree with the residual risk involved in the activity. Please get in touch if you have any issue understanding the documents.
 * Whether in advance or on the day, you have to provide up to date contact information – mobile number as a minimum. This is for track and trace.
 * Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 
-* You should remember to follow all current UK Government guidances (insert link) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
+* You should remember to follow all current UK Government guidances (see https://www.gov.uk/coronavirus) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
 * Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf as well as club specific risk assessment : https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf
 * Note that by attending you agree for your personal contact details to be stored and held for 21 days following the activity and will be supplied to NHS Track and Trace/ other relevant public authority if requested to do so
 
 ## During Activity:
 * Each player will have to sanitise hands before the start and after the end of each set.
-* Congratulatory touches are not permitted 
+* Congratulatory touches are not permitted (if you do one by mistake, ask your covid officer to provide hand sanitising or apply some on their request)
 * Players should not to touch their face, mouth, nose or eyes. 
 * Shouting should be avoided (shouting produces aerosol droplets which propagates virus longer and further than normal breathing)
 * Sets will be capped at **15 points** with 2 points difference or first team to 17 points.
