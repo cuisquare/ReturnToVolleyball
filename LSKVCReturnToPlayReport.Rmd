@@ -13,6 +13,10 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r source_functions, echo=FALSE,message=FALSE, warning=FALSE}
+source("ProduceConfigurations.R")
+```
+
 \newpage
 # Motivation {-}
 
@@ -35,45 +39,6 @@ The Risk Assessment is based on:
 * Attendance to VE Webinar Return to Volleyball held on 06/08/20.
 
 The **Logistics Considerations** contains considerations for us to decide on how we can plan to run the session, volunteers required, etc. 
-
-```{r source_functions, echo=FALSE,message=FALSE, warning=FALSE}
-options(digits = 2)   # report 3 significant digits
-
-source("Functions.R")
-
-shortnames <- c("CaseDesc",
-                "LC",
-                "NTM",
-                "DS",
-                "SF",
-                "ET",
-                "NTT",
-                "NC",
-                "ES",
-                "NSM",
-                "DP",
-                "DS")
-
-longnames <- c("Cases Description",
-               "court length (metres) - Input",
-               "Nb players per team - Input",
-               "Set duration (minutes) - Input",
-               "Safety Factor",
-               "Max Session Virus Exposure (minutes) - Input",
-               "Nb players total - Input",
-               "Nb courts - Input",
-               "Set Virus Exposure (minutes) - Calculated",
-               "Max Number of Sets - Calculated",
-               "Playtime duration per player - Calculated",
-               "Session duration (no breaks) - Calculated")  
-definitions <- data.frame(Abbrevation = shortnames, Definition = longnames)
-```
-```{r max_exposure_definition, echo=FALSE,message=FALSE, warning=FALSE}
-max_exposure <- 10
-```
-```{r safety_factor_definition, echo=FALSE,message=FALSE, warning=FALSE}
-safety_factor <- 1.5
-```
 
 \newpage
 # Club Requirements (Draft)
@@ -198,240 +163,61 @@ kable(x=definitions,caption="Acronyms",format = "latex", booktabs = T,linesep = 
 ```
 
 ### 30 players
-
-```{r, echo=FALSE,message=FALSE, warning=FALSE}
-nb_players <-30
-```
-
-```{r generate_play_cases_singlenet_30, echo=FALSE,message=FALSE, warning=FALSE}
-#adding input values
-play_cases_singlenet <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
-
-for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(20)){
-    for (nb_courts in c(1,2)) {
-      play_cases_singlenet <- play_cases_singlenet  %>%  
-        bind_rows(get_new_play_case_input(8,
-                                          nb_player_team,
-                                          set_duration,
-                                          safety_factor,
-                                          max_exposure,
-                                          nb_players,
-                                          nb_courts,
-                                          "LSKVC "))
-    }
-  }
-}  
-
-
-
-#adding calculated values
-play_cases_singlenet <- add_calculated_values(play_cases_singlenet)
-
-
-#rename columns
-colnames(play_cases_singlenet) <- shortnames
-```
-
 ```{r add_results_table_singlenet_30, echo=FALSE,message=FALSE, warning=FALSE}
 #adding results table
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 30 players") %>%
+kable(x=play_cases_30,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 30 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
 
 ``` 
 
 ### 24 players
-
-```{r, echo=FALSE,message=FALSE, warning=FALSE}
-nb_players <-24
-```
-
-
-```{r generate_play_cases_singlenet_24, echo=FALSE,message=FALSE, warning=FALSE}
-#adding input values
-play_cases_singlenet <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
-
-for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(20)){
-    for (nb_courts in c(1,2)) {
-      play_cases_singlenet <- play_cases_singlenet  %>%  
-        bind_rows(get_new_play_case_input(8,
-                                          nb_player_team,
-                                          set_duration,
-                                          safety_factor,
-                                          max_exposure,
-                                          nb_players,
-                                          nb_courts,
-                                          "LSKVC "))
-    }
-  }
-}  
-
-
-
-#adding calculated values
-play_cases_singlenet <- add_calculated_values(play_cases_singlenet)
-
-
-#rename columns
-colnames(play_cases_singlenet) <- shortnames
-```
-
 ```{r add_results_table_singlenet_24, echo=FALSE,message=FALSE, warning=FALSE}
 #adding results table
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 24 players") %>%
+kable(x=play_cases_24,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 24 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
 
 ``` 
 
 ### 12 players
-
-```{r, echo=FALSE,message=FALSE, warning=FALSE}
-nb_players <-12
-```
-
-```{r generate_play_cases_singlenet_12, echo=FALSE,message=FALSE, warning=FALSE}
-#adding input values
-play_cases_singlenet <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
-
-for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(20)){
-    for (nb_courts in c(1,2)) {
-      play_cases_singlenet <- play_cases_singlenet  %>%  
-        bind_rows(get_new_play_case_input(8,
-                                          nb_player_team,
-                                          set_duration,
-                                          safety_factor,
-                                          max_exposure,
-                                          nb_players,
-                                          nb_courts,
-                                          "LSKVC "))
-    }
-  }
-}  
-
-
-#adding calculated values
-play_cases_singlenet <- add_calculated_values(play_cases_singlenet)
-
-
-#rename columns
-colnames(play_cases_singlenet) <- shortnames
-```
-
 ```{r add_results_table_singlenet_12, echo=FALSE,message=FALSE, warning=FALSE}
 #adding results table
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 12 players") %>%
+kable(x=play_cases_12,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 12 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
 
 ``` 
 
 ### 8 players
-```{r, echo=FALSE,message=FALSE, warning=FALSE}
-nb_players <-8
-```
-
-```{r generate_play_cases_singlenet_8, echo=FALSE,message=FALSE, warning=FALSE}
-#adding input values
-play_cases_singlenet <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
-
-for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(20)){
-    for (nb_courts in c(1,2)) {
-      play_cases_singlenet <- play_cases_singlenet  %>%  
-        bind_rows(get_new_play_case_input(8,
-                                          nb_player_team,
-                                          set_duration,
-                                          safety_factor,
-                                          max_exposure,
-                                          nb_players,
-                                          nb_courts,
-                                          "LSKVC "))
-    }
-  }
-}  
-
-
-
-#adding calculated values
-play_cases_singlenet <- add_calculated_values(play_cases_singlenet)
-
-
-#rename columns
-colnames(play_cases_singlenet) <- shortnames
-```
-
 ```{r add_results_table_singlenet_8, echo=FALSE,message=FALSE, warning=FALSE}
 #adding results table
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_singlenet,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 8 players") %>%
+kable(x=play_cases_8,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - 8 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
 
 ``` 
 
 ### All configurations
-```{r generate_play_cases_ALL, echo=FALSE,message=FALSE, warning=FALSE}
-#adding input values
-play_cases <- data.frame() #get_new_play_case_input(9,6,20,5,12,1,"VE STUDY ")
-
-for (nb_player_team in c(4,5,6)) {
-  for (set_duration in c(20)){
-    for (nb_courts in c(1,2)) {
-      for (nb_players in c(8,12,24,30)) {
-        play_cases <- play_cases  %>%  
-          bind_rows(get_new_play_case_input(8,
-                                            nb_player_team,
-                                            set_duration,
-                                            safety_factor,
-                                            max_exposure,
-                                            nb_players,
-                                            nb_courts,
-                                            "LSKVC "))          
-      }
-    }
-  }
-}  
-
-#adding calculated values
-play_cases <- add_calculated_values(play_cases) 
-
-
-#rename columns
-colnames(play_cases) <- shortnames
-
-VE_case <- add_calculated_values(get_new_play_case_input(9,6,20,1,5,12,1,"VE STUDY "))
-colnames(VE_case) <- shortnames
-
-play_cases <- bind_rows(VE_case,play_cases)
-colnames(play_cases) <- shortnames
-
-```
 
 ```{r add_results_table_ALL, echo=FALSE,message=FALSE, warning=FALSE}
 #adding results table
 library(knitr)
 library(kableExtra)
 
-# kable(x=play_cases,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - All") %>%
-#   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
-#   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4))
-
-kable(x=play_cases,format = "latex", booktabs = T, longtable = T,linesep = "",caption="Park Play Configurations - All") %>%
+kable(x=play_cases_all,format = "latex", booktabs = T, longtable = T,linesep = "",caption="Park Play Configurations - All") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position","repeat_header"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4))
 
