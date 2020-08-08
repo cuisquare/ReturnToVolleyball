@@ -1,5 +1,5 @@
 ---
-title: "LSKVC Return to Play (Outdoor) Players Pack"
+title: "LSKVC Return to Play (Outdoor) Players Rules"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 

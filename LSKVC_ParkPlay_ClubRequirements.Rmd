@@ -1,0 +1,63 @@
+---
+title: "LSKVC Return to Play (Outdoor) Club Requirements"
+author: "Nicolas Vecchione (Powerball Rep)"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r source_functions, echo=FALSE,message=FALSE, warning=FALSE}
+source("ProduceConfigurations.R")
+```
+
+# Motivation {-}
+
+This document sets out the obligations of the club in the organisation of LSKVC outdoor volleyball sessions, returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
+
+The **Club Requirements Draft** section outlines proposed measures to be put in place by the club in the organisation of outdoor session.
+
+The Club Requirements are made of:
+
+* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
+During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
+* Additional specific rules based on our specific Risk Assessment.
+
+The **Risk Assessment** should be read and understood alongside those requirements, as the basis for it.
+
+\newpage
+# Club Requirements 
+
+## Prior to Activity:
+* Create a Facebook or Teamer event. This event should come with a description of the session.
+* Numbers of players to be capped at **26 players** to allow for 4 spaces reserved for organisers. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 30. 
+* The session should have a clear start and finish set in the facebook/teamer event and be such that club organisers can realistically attend throughout fulfilling their roles managing the session. A reasonable duration would be **4 hours**.
+* The invite should include a link to read the players rules (draft written below)
+* Roles in setting up /setting down / help run session should be identified
+* Procure hand sanitising bottles sufficient for the activity: one home size bottle for each side of the court, one for the seating area, 3 total. Sanitising wipes might be more practical.
+* Check that we have up to date contact details for participants, 
+* appoint a COVID-19 officer who has responsibility to ensure that all mitigating measures and guidance is followed.
+* A risk assessment should have been completed and risk mitigations put in place and monitored. See attached VE risk assessment document.
+* all participants are made aware of expected social distancing and hygiene measures during play and whilst at the venue and makes  the risk assessment available to everyone who attends the event to read
+
+## During the activity:
+* Remind verbally the player rules prior to start of play (no celebratory touches, no shouting, no touching own mouth/face/nose/eyes)
+* Ensure that the player rules below are enforced, on penalty of refusing access to players who either refuse or repeatedly neglect to follow the rules
+* Wipe equipment (mainly balls) before and after each set
+* Provide sanitising at any time during the play upon player request
+* Control the length of sets – **15 points** with 2 points difference or first team to 17 points. 
+* Control the number of sets played by individual players – maximum of **`r round(get_max_nb_sets_per_player(8,6,20,safety_factor,max_exposure))` sets** if we play 6v6 (*`r round(get_max_nb_sets_per_player(8,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(8,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
+* Control the number of participants. If unregistered participants ask to join on the day, it must be within the 30 cap and they must abide by the rules including provide up to date contact information before they can play. It would be easier organisation wise not to allow unregistered players to join the session unless we have enough organisers to provide that service.
+
+## After the activity:
+* encourage all participants to report any infection of their household to the NHS Test and Trace system following participation to limit the spread of the virus.
+* collect and disinfect all balls in accordance with the ball manufacturer’s recommendations – available on the Volleyball England website.
+* keep a temporary record of participants for 21 days to assist Track and Trace. 
+* Have a debrief during the week on how the sessions went (make mental note of how session went or tape it) for lessons learned on how to run the next one
+
