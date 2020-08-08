@@ -77,6 +77,49 @@ get_pretty_length <- function(minutes) {
   return(output)
 }
 
+
+
+get_all_new_play_case_input <- function(court_side_list,
+                                nb_players_team_list,
+                                set_duration_list,
+                                safety_factor_list,
+                                max_exposure_list,
+                                nb_players_list,
+                                nb_courts_list,
+                                prefix_list) {
+  play_cases <- data.frame() 
+  
+  for (court_side in court_side_list) {
+    for (nb_player_team in nb_players_team_list) {
+      for (set_duration in set_duration_list) {
+        for (safety_factor in safety_factor_list) {
+          for(max_exposure in max_exposure_list) {
+            for(nb_players in nb_players_list) {
+              for (nb_courts in nb_courts_list) {
+                for (prefix in prefix_list) {
+                  play_cases <- play_cases  %>%  
+                    bind_rows(get_new_play_case_input(court_side,
+                                                      nb_player_team,
+                                                      set_duration,
+                                                      safety_factor,
+                                                      max_exposure,
+                                                      nb_players,
+                                                      nb_courts,
+                                                      prefix))
+                }
+              }
+            } 
+          }
+        }
+      }
+    }
+  }
+  return(play_cases)
+}
+
+
+
+
 add_calculated_values <- function(play_cases_input) {
   max_max_playtime <- 7*60 #max player time in minutes
   max_session_length <- 7*60 #max session length in minutes
