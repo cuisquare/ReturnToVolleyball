@@ -1,5 +1,5 @@
 ---
-title: "LSKVC Return to Play (Outdoor) Preparation"
+title: "LSKVC Return to Play (Outdoor) Logistics Considerations"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 
@@ -20,6 +20,12 @@ This document aims to support LSKVC in their organisation and running of officia
 The **Logistics Considerations** contains considerations for us to decide on how we can plan to run the session, volunteers required, etc. 
 
 This document should be read alongside the **Club Requirements**, **Players Rules** and **Risk Assessment** documents. 
+
+The **Risk Assessment** (available at  *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_RiskAssessment.pdf)*) must be read and understood alongside this document as the basis for it.
+
+The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_PlayersRules.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_PlayersRules.pdf)*) should be read and understood alongside those requirements to understand what will be expected from players in a club run session.
+
+The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf)*) should also be read to be aware of the level of support you can expect during a session.
 
 \newpage
 # Logistics Considerations
