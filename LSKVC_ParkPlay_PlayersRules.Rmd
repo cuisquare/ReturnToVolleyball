@@ -20,7 +20,7 @@ source("ProduceConfigurations.R")
 
 This document aims to support LSKVC in their organisation and running of official LSKVC outdoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
 
-The **Players Rules** section outlines what will be sent to players with the expectation of compliance. 
+The **Players Rules** section outlines behaviour expected from players during lSKVC outdoor play. 
 
 The  Player Rules are made of:
 
