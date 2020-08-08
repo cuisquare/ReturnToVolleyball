@@ -21,7 +21,7 @@ source("ProduceConfigurations.R")
 
 This document sets out the obligations of the club in the organisation of LSKVC outdoor volleyball sessions, returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
 
-The **Club Requirements Draft** section outlines proposed measures to be put in place by the club in the organisation of outdoor session.
+The **Club Requirements** section outlines proposed measures to be put in place by the club in the organisation of outdoor session.
 
 The Club Requirements are made of:
 
@@ -29,7 +29,7 @@ The Club Requirements are made of:
 During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
 * Additional specific rules based on our specific Risk Assessment.
 
-The **Risk Assessment** should be read and understood alongside those requirements, as the basis for it.
+The **Risk Assessment** and **Players Rules** should be read and understood alongside those requirements.
 
 \newpage
 # Club Requirements 
