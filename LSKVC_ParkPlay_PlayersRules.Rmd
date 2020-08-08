@@ -41,13 +41,14 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 * Whether in advance or on the day, you have to provide up to date contact information – mobile number as a minimum. This is for track and trace.
 * Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 
 * You should remember to follow all current UK Government guidances (insert link) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
-* Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf
+* Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf as well as club specific risk assessment : https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf
+* Note that by attending you agree for your personal contact details to be stored and held for 21 days following the activity and will be supplied to NHS Track and Trace/ other relevant public authority if requested to do so
 
 ## During Activity:
 * Each player will have to sanitise hands before the start and after the end of each set.
-* Congratulatory touches are not permitted
+* Congratulatory touches are not permitted 
 * Players should not to touch their face, mouth, nose or eyes. 
-* Shouting should be avoided.
+* Shouting should be avoided (shouting produces aerosol droplets which propagates virus longer and further than normal breathing)
 * Sets will be capped at **15 points** with 2 points difference or first team to 17 points.
 * Each player can play a maximum of **`r round(get_max_nb_sets_per_player(8,6,20,safety_factor,max_exposure))` sets** if we play 6v6 (*`r round(get_max_nb_sets_per_player(8,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(8,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
 * Any participants not on court must maintain social distancing. Any seating arrangement (where you keep your stuff) should be 2m away from the next persons. 
@@ -57,4 +58,5 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 * Sanitise your hands after the completion of activity
 * Leave the playing area whilst maintaining social distancing.
 * If you have not done so yet please provide up to date contact details before leaving. It will be kept for 21 days to provide track and trace 
+* If you develop symptoms and are asked to supply contacts to NHS Track and Trace, the person to contact is the covid officer on the day. If you don't remember who that was, please contact the club secretary secretary@londonspikers.org
 * If you have suggestions on running the session or observed something you think could be improved especially in terms of safety please get in touch with the organisers
