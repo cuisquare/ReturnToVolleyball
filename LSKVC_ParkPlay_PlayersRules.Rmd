@@ -26,9 +26,11 @@ The  Player Rules are made of:
 
 * Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
 During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
-* Additional specific rules based on our specific Risk Assessment (see below)
+* Additional specific rules based on our specific Risk Assessment.
 
-The **Risk Assessment** must be read and understood alongside those rules. The **Club Requirements** should also be read to be aware of the level of support you can expect during a session.
+The **Risk Assessment** (available at  *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_RiskAssessment.pdf)*) must be read and understood alongside those rules. 
+
+The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf)*) should also be read to be aware of the level of support you can expect during a session.
 
 \newpage
 # Players Rules
