@@ -36,7 +36,70 @@ The **Players Rules** document is available at *[https://github.com/cuisquare/Re
 The **Club Requirements** document is available at  *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf)*.
 
 \newpage
-# Risk Assessment
+# Risk Assessment Matrix
+## Approach
+
+Hazards are identified with a Likelihood (L) of occurrence and Severity (S) should they occur. The Risk (R) is the product L*S. Controls are put into place resulting in the residual Risk (S,L,R). An acceptable Risk should be below 6.
+
+## Risk Assessment Matrix
+```{r risk_assessment_risks, echo=FALSE,message=FALSE, warning=FALSE}
+
+#\\makecell[l]{group 1.1\\\\group1.2}
+Hazards <- get_new_Hazard(Hazard="Transfer of virus via equipment used in session ",
+                 Persons_Affected = "Athletes\nPublic",
+                 Likelihood_Before = 3,
+                 Severity_Before = 4,
+                 Controls = "• Cleaning and wiping down all equipment with sanitiser before and after sessions\n• Having a limited number of balls to reduce overall risk of transfer",
+                 Likelihood_After = 2,
+                 Severity_After = 3)
+
+Hazards <- Hazards %>% add_new_hazard(Hazard="Transfer of virus as a result of increased interaction between athletes including public ",
+                           Persons_Affected = "Athletes\nPublic",
+                           Likelihood_Before = 3,
+                           Severity_Before = 4,
+                           Controls = "• Limit number of people in sessions.\n• Athletes to avoid all unnecessary contact such as handshakes or hand slaps.\n• Athletes to hand sanitize during breaks.\n• Athletes to avoid sharing all personal equipment (drinking bottles, therabands, towels etc.)\n• Athletes to keep their belongings at least two metres apart.\n• Travel to sessions under government guidelines with social distance.",
+                           Likelihood_After = 2,
+                           Severity_After = 3)
+
+Hazards <- Hazards %>% add_new_hazard(Hazard="Increased exposure due to play being scrappier in park compared to coached sessions and game scenario used in Volleyball England to determine exposure rate",
+                           Persons_Affected = "Athletes",
+                           Likelihood_Before = 3,
+                           Severity_Before = 4,
+                           Controls = "• All of the above\n• Reduce the number of sets played according to the number of players per team (See Risk Assessment Analysis)",
+                           Likelihood_After = 2,
+                           Severity_After = 3)
+
+```
+
+
+```{r risk_assessment_table, echo=FALSE,message=FALSE, warning=FALSE}
+library(knitr)
+devtools::dev_mode(on=T)
+devtools::install_github("haozhu233/kableExtra")
+library(kableExtra)
+Hazards %>%
+  kable("latex", 
+        caption="Risk Assessment Park Play",
+        escape = F,
+        longtable = T) %>%
+  kable_styling(full_width = F) %>%  
+  column_spec(1, width = "13em",border_left=T) %>%
+  column_spec(2, width = "4em")%>%
+  column_spec(3, width = "0.5em")%>%
+  column_spec(4, width = "0.5em")%>%
+  column_spec(5, width = "0.5em")%>%
+  column_spec(6, width = "13em")%>%
+  column_spec(7, width = "0.5em")%>%
+  column_spec(8, width = "0.5em")%>%
+  column_spec(9, width = "0.5em",border_right = T) %>%
+  kable_styling(latex_options = c("striped", "HOLD_position","repeat_header"),
+                repeat_header_continued = T) %>%
+  add_header_above(c(" " = 1," " = 1, "Before" = 3," " = 1, "After" = 3),line=T,border_left=T,border_right = T) #%>%  row_spec(0, angle = 90) 
+devtools::dev_mode(on=F) 
+```
+
+\newpage
+# Risk Assessment Analysis
 
 ## Background
 
@@ -155,9 +218,9 @@ kable(x=play_cases_8,format = "latex", booktabs = T,linesep = "",caption="Park P
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_all,format = "latex", booktabs = T, longtable = T,linesep = "",caption="Park Play Configurations - All") %>%
+kable(x=play_cases_all,format = "latex", booktabs = T,linesep = "",caption="Park Play Configurations - All") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position","repeat_header"))%>%
-  add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4))
+  add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #, longtable = T
 
 ``` 
 

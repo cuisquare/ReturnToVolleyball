@@ -1,6 +1,7 @@
 library(tidyverse)
-
+library(dplyr)
 library(stringr)
+library(kableExtra)
 
 get_set_exposure_VEAsRef <- function(court_side,
                                      nb_per_team,
@@ -161,4 +162,82 @@ get_kable_bottom_caption <- function(x,caption) {
   
   xtable(x,caption) %>%
     xtable2kable()
+}
+
+get_new_Hazard <- function(Hazard,
+                           Persons_Affected,
+                           Likelihood_Before,
+                           Severity_Before,
+                           Controls,
+                           Likelihood_After,
+                           Severity_After) {
+  new_Hazard <- data.frame(Hazard=Hazard,
+                           Persons_Affected=Persons_Affected,
+                           Likelihood_Before=Likelihood_Before,
+                           Severity_Before=Severity_Before,
+                           Risk_Before=0,
+                           Controls=Controls,
+                           Likelihood_After=Likelihood_After,
+                           Severity_After=Severity_After,
+                           Risk_After=0)
+  
+  new_Hazard <- new_Hazard %>% 
+    mutate(Risk_Before  = Likelihood_Before * Severity_Before,
+           Risk_After = Likelihood_After * Severity_After)
+  
+  new_Hazard <- new_Hazard %>%
+    mutate_all(linebreak)
+
+  
+  real_names <- names(new_Hazard) #saving just in case
+  display_names <- c("Hazard",
+                     "Persons Affected",
+                     "L",
+                     "S",
+                     "R",
+                     "Controls",
+                     "L",
+                     "S",
+                     "R"
+  )
+  
+  names(new_Hazard) <- display_names
+  
+  return(new_Hazard)
+}
+
+add_new_hazard <- function(HDF,
+                           Hazard,
+                           Persons_Affected,
+                           Likelihood_Before,
+                           Severity_Before,
+                           Controls,
+                           Likelihood_After,
+                           Severity_After) {
+  
+  new_Hazard <- get_new_Hazard(Hazard,
+                               Persons_Affected,
+                               Likelihood_Before,
+                               Severity_Before,
+                               Controls,
+                               Likelihood_After,
+                               Severity_After)
+  
+  HDF <- HDF %>%
+    bind_rows(new_Hazard)
+  
+  display_names <- c("Hazard",
+                     "Persons Affected",
+                     "L",
+                     "S",
+                     "R",
+                     "Controls",
+                     "L",
+                     "S",
+                     "R"
+  )
+  
+  names(HDF) <- display_names
+  
+  return(HDF)
 }
