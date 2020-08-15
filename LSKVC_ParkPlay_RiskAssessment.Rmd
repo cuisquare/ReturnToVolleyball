@@ -7,6 +7,8 @@ output:
     toc: true
     toc_depth: 2
     number_sections: true
+    includes:
+            in_header: header.tex 
 ---
 
 ```{r setup, include=FALSE}
@@ -15,6 +17,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r source_functions, echo=FALSE,message=FALSE, warning=FALSE}
 source("ProduceConfigurations.R")
+```
+
+```{r risk_table_setup, echo=FALSE,message=FALSE, warning=FALSE}
+
+risk_landscape <- TRUE #if set to true the risk assessment table will be in landscape mode
+
+col_size_large_portrait <- 13
+col_size_large_landscape <- 24
+if (risk_landscape) {
+  col_size_large <- col_size_large_landscape
+} else {
+  col_size_large <- col_size_large_portrait
+}
+
+col_size_medium <- 4
+col_size_small <- 0.5
+
+get_col_size_string <- function(col_size_int) {
+  col_size_string <- paste(col_size_int,"em",sep="")
+  return (col_size_string)
+}
 ```
 
 # Motivation {-}
@@ -36,15 +59,18 @@ The **Players Rules** document is available at *[https://github.com/cuisquare/Re
 The **Club Requirements** document is available at  *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf)*.
 
 \newpage
-# Risk Assessment Matrix
+# Quantitative Risk Assessment 
 ## Approach
 
 Hazards are identified with a Likelihood (L) of occurrence and Severity (S) should they occur. The Risk (R) is the product L*S. Controls are put into place resulting in the residual Risk (S,L,R). An acceptable Risk should be below 6.
+
+`r if_else(risk_landscape,"\\blandscape","")`
 
 ## Risk Assessment Matrix
 ```{r risk_assessment_risks, echo=FALSE,message=FALSE, warning=FALSE}
 
 #\\makecell[l]{group 1.1\\\\group1.2}
+
 Hazards <- get_new_Hazard(Hazard="Transfer of virus via equipment used in session ",
                  Persons_Affected = "Athletes\nPublic",
                  Likelihood_Before = 3,
@@ -71,11 +97,11 @@ Hazards <- Hazards %>% add_new_hazard(Hazard="Increased exposure due to play bei
 
 ```
 
-
 ```{r risk_assessment_table, echo=FALSE,message=FALSE, warning=FALSE}
+
 library(knitr)
 devtools::dev_mode(on=T)
-devtools::install_github("haozhu233/kableExtra")
+#devtools::install_github("haozhu233/kableExtra")
 library(kableExtra)
 Hazards %>%
   kable("latex", 
@@ -83,20 +109,22 @@ Hazards %>%
         escape = F,
         longtable = T) %>%
   kable_styling(full_width = F) %>%  
-  column_spec(1, width = "13em",border_left=T) %>%
-  column_spec(2, width = "4em")%>%
-  column_spec(3, width = "0.5em")%>%
-  column_spec(4, width = "0.5em")%>%
-  column_spec(5, width = "0.5em")%>%
-  column_spec(6, width = "13em")%>%
-  column_spec(7, width = "0.5em")%>%
-  column_spec(8, width = "0.5em")%>%
-  column_spec(9, width = "0.5em",border_right = T) %>%
+  column_spec(1, width = get_col_size_string(col_size_large),border_left=T) %>%
+  column_spec(2, width = get_col_size_string(col_size_medium))%>%
+  column_spec(3, width = get_col_size_string(col_size_small))%>%
+  column_spec(4, width = get_col_size_string(col_size_small))%>%
+  column_spec(5, width = get_col_size_string(col_size_small))%>%
+  column_spec(6, width = get_col_size_string(col_size_large))%>%
+  column_spec(7, width = get_col_size_string(col_size_small))%>%
+  column_spec(8, width = get_col_size_string(col_size_small))%>%
+  column_spec(9, width = get_col_size_string(col_size_small),border_right = T) %>%
   kable_styling(latex_options = c("striped", "HOLD_position","repeat_header"),
                 repeat_header_continued = T) %>%
   add_header_above(c(" " = 1," " = 1, "Before" = 3," " = 1, "After" = 3),line=T,border_left=T,border_right = T) #%>%  row_spec(0, angle = 90) 
 devtools::dev_mode(on=F) 
 ```
+
+`r if_else(risk_landscape,"\\elandscape","")`
 
 \newpage
 # Risk Assessment Analysis
