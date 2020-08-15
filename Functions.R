@@ -164,6 +164,17 @@ get_kable_bottom_caption <- function(x,caption) {
     xtable2kable()
 }
 
+get_tableready_stringfromcharlist <- function(charlist) {
+  list_marker <- "• "
+  Encoding(list_marker) <- "UTF-8"
+
+  if (length(charlist) > 1) {
+    charlist <- paste(list_marker,charlist,collapse="\n")
+  }
+  
+  return (charlist)
+}
+
 get_new_Hazard <- function(Hazard,
                            Persons_Affected,
                            Likelihood_Before,
@@ -171,6 +182,11 @@ get_new_Hazard <- function(Hazard,
                            Controls,
                            Likelihood_After,
                            Severity_After) {
+  
+  Hazard <- Hazard %>% get_tableready_stringfromcharlist()
+  Persons_Affected <- Persons_Affected %>% get_tableready_stringfromcharlist()
+  Controls <- Controls %>% get_tableready_stringfromcharlist()
+  
   new_Hazard <- data.frame(Hazard=Hazard,
                            Persons_Affected=Persons_Affected,
                            Likelihood_Before=Likelihood_Before,

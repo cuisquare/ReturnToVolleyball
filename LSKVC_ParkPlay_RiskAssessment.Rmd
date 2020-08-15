@@ -31,7 +31,7 @@ if (risk_landscape) {
   col_size_large <- col_size_large_portrait
 }
 
-col_size_medium <- 4
+col_size_medium <- 5
 col_size_small <- 0.5
 
 get_col_size_string <- function(col_size_int) {
@@ -69,31 +69,58 @@ Hazards are identified with a Likelihood (L) of occurrence and Severity (S) shou
 ## Risk Assessment Matrix
 ```{r risk_assessment_risks, echo=FALSE,message=FALSE, warning=FALSE}
 
-#\\makecell[l]{group 1.1\\\\group1.2}
+Hazards <- data.frame()
 
-Hazards <- get_new_Hazard(Hazard="Transfer of virus via equipment used in session ",
-                 Persons_Affected = "Athletes\nPublic",
-                 Likelihood_Before = 3,
-                 Severity_Before = 4,
-                 Controls = "• Cleaning and wiping down all equipment with sanitiser before and after sessions\n• Having a limited number of balls to reduce overall risk of transfer",
-                 Likelihood_After = 2,
-                 Severity_After = 3)
+Hazards <- Hazards %>% add_new_hazard(
+  Hazard="Transfer of virus via equipment used in session",
+  Persons_Affected = c(
+    "Athletes",
+    "Public"),
+  Likelihood_Before = 3,
+  Severity_Before = 4,
+  Controls = c("Cleaning and wiping down all equipment with sanitiser before and after sessions",
+               "Having a limited number of balls to reduce overall risk of transfer"),
+  Likelihood_After = 2,
+  Severity_After = 3)
 
-Hazards <- Hazards %>% add_new_hazard(Hazard="Transfer of virus as a result of increased interaction between athletes including public ",
-                           Persons_Affected = "Athletes\nPublic",
-                           Likelihood_Before = 3,
-                           Severity_Before = 4,
-                           Controls = "• Limit number of people in sessions.\n• Athletes to avoid all unnecessary contact such as handshakes or hand slaps.\n• Athletes to hand sanitize during breaks.\n• Athletes to avoid sharing all personal equipment (drinking bottles, therabands, towels etc.)\n• Athletes to keep their belongings at least two metres apart.\n• Travel to sessions under government guidelines with social distance.",
-                           Likelihood_After = 2,
-                           Severity_After = 3)
+Hazards <- Hazards %>% add_new_hazard(
+  Hazard="Transfer of virus as a result of increased interaction between athletes including public",
+  Persons_Affected = c(
+    "Athletes",
+    "Public"),
+  Likelihood_Before = 3,
+  Severity_Before = 4,
+  Controls = c(
+    "Limit number of people in sessions.",
+    "Athletes to avoid all unnecessary contact such as handshakes or hand slaps",
+    "Athletes to hand sanitize during breaks.",
+    "Athletes to avoid sharing all personal equipment (drinking bottles, therabands, towels etc.)",
+    "Athletes to keep their belongings at least two metres apart.",
+    "Travel to sessions under government guidelines with social distance."),
+  Likelihood_After = 2,
+  Severity_After = 3)
 
-Hazards <- Hazards %>% add_new_hazard(Hazard="Increased exposure due to play being scrappier in park compared to coached sessions and game scenario used in Volleyball England to determine exposure rate",
-                           Persons_Affected = "Athletes",
-                           Likelihood_Before = 3,
-                           Severity_Before = 4,
-                           Controls = "• All of the above\n• Reduce the number of sets played according to the number of players per team (See Risk Assessment Analysis)",
-                           Likelihood_After = 2,
-                           Severity_After = 3)
+Hazards <- Hazards %>% add_new_hazard(
+  Hazard="Increased exposure due to play being scrappier in park compared to game scenario used in Volleyball England to ascertain exposure duration constitutes medium risk",
+  Persons_Affected = "Athletes",
+  Likelihood_Before = 3,
+  Severity_Before = 4,
+  Controls = c(
+    "All of the above",
+    "Reduce the number of sets played according to the number of players per team (See Risk Assessment Analysis)"),
+  Likelihood_After = 2,
+  Severity_After = 3)
+
+Hazards <- Hazards %>% add_new_hazard(
+  Hazard="Transfer of virus from players to general public ",
+  Persons_Affected = "Public",
+  Likelihood_Before = 3,
+  Severity_Before = 4,
+  Controls = c(
+    "No athlete to take part who has regular contact with at risk population for covid (elderly, underlying health condition)",
+    "Social distance at all times when not playing"),
+  Likelihood_After = 2,
+  Severity_After = 3)
 
 ```
 
