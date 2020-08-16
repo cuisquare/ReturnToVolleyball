@@ -23,12 +23,18 @@ source("ProduceConfigurations.R")
 
 risk_landscape <- TRUE #if set to true the risk assessment table will be in landscape mode
 
-col_size_large_portrait <- 13
-col_size_large_landscape <- 24
+col_size_hazards_portrait <- 13
+col_size_controls_portrait <- 13
+
+col_size_hazards_landscape <- 16
+col_size_controls_landscape <- 32
+
 if (risk_landscape) {
-  col_size_large <- col_size_large_landscape
+  col_size_controls <- col_size_controls_landscape
+  col_size_hazards <- col_size_hazards_landscape
 } else {
-  col_size_large <- col_size_large_portrait
+  col_size_controls <- col_size_controls_portrait
+  col_size_hazards <- col_size_hazards_portrait
 }
 
 col_size_medium <- 5
@@ -170,12 +176,12 @@ Hazards %>%
         escape = F,
         longtable = T) %>%
   kable_styling(full_width = F) %>%  
-  column_spec(1, width = get_col_size_string(col_size_large),border_left=T) %>%
+  column_spec(1, width = get_col_size_string(col_size_hazards),border_left=T) %>%
   column_spec(2, width = get_col_size_string(col_size_medium))%>%
   column_spec(3, width = get_col_size_string(col_size_small))%>%
   column_spec(4, width = get_col_size_string(col_size_small))%>%
   column_spec(5, width = get_col_size_string(col_size_small))%>%
-  column_spec(6, width = get_col_size_string(col_size_large))%>%
+  column_spec(6, width = get_col_size_string(col_size_controls))%>%
   column_spec(7, width = get_col_size_string(col_size_small))%>%
   column_spec(8, width = get_col_size_string(col_size_small))%>%
   column_spec(9, width = get_col_size_string(col_size_small),border_right = T) %>%
