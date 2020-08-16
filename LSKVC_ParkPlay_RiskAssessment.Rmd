@@ -69,7 +69,7 @@ The **Club Requirements** document is available at  *[https://github.com/cuisqua
 
 ## Definitions
 
-### Hazard
+### Hazards
 
 Hazards are events which should they occur would result in damage to people or property. 
 
