@@ -139,9 +139,8 @@ Hazards <- Hazards %>% add_new_hazard(
   Likelihood_Before = 3,
   Severity_Before = 4,
   Controls = c(
-    "Carry out conservative analysis on likely exposure duration (see Virus Exposure Analysis) DONE",
-    "Analysis to factor in specifics of activity such as the court size, number of players per team with safety factor added DONE",
-    "Reduce the total duration of play corresponding to an accept risk of virus exposure from accumulated proximity DONE",
+    "Carry out conservative Aanalysis on likely exposure duration (see Virus Exposure Analysis) with Analysis to factor in specifics of activity such as the court size, number of players per team with safety factor added - DONE",
+    "Reduce the total duration of play corresponding to an acceptable risk of virus exposure from accumulated proximity DONE",
     "Carry out observation of play to determine actual likely exposure and revise propose max duration for the activity accordingly TO BE CARRIED OUT"),
   Likelihood_After = 2,
   Severity_After = 4)
