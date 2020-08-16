@@ -66,9 +66,43 @@ The **Club Requirements** document is available at  *[https://github.com/cuisqua
 
 \newpage
 # Quantitative Risk Assessment 
-## Approach
+## Definitions
 
-Hazards are identified with a Likelihood (L) of occurrence and Severity (S) should they occur. The Risk (R) is the product L*S. Controls are put into place resulting in the residual Risk (S,L,R). An acceptable Risk should be below 6.
+### Hazard
+
+Hazards are events which should they occur would result in damage to people or property. 
+
+### Likelihood (L)
+
+Describes how likely it is for the hazard to happen. Rated between 1 and 5, with the following definitions for each level:
+
+1. **Very unlikely** to happen
+2. **Unlikely** to happen, but not by any means impossible
+3. **Likely** to happen, and would not be totally unexpected
+4. **Very likely** to happen, and would be at all unusual
+5. **Certain** to happen
+
+### Severity (S)
+
+Describes the consequences of the hazard should it happen. Rated between 1 and 5, with the following definitions for each level:
+
+1. No injury, ill health or damage
+2. Minor injury or minor ill health complaint, no time lost. Minor property damage or minor environmental incident.
+3. Lost time injury, up to and including reportable injury to the HSE with over seven days time lost, but not as a specified injury, Some risk of immediate or long-term health issues. Significant property damage or local environmental damage.
+4. Specified injury, long-term absence or significant risk that could lead to immediate or long-term health illness, including reportable disease. Substantial property damage and/or serious environmental impact.
+5. Fatal accident or multiple specified injuries. Catastrophic event or environmental disaster. Public or others could be involved as well.
+
+### Risk (R)
+
+The corresponding Risk (R) of the Hazard is evaluated by the product S*R. An acceptable residual Risk should be 8 or below. Any activity with higher risk should be stopped until further controls are put into place so the risk reaches an acceptable level.
+
+## Approach for this Risk Assessment
+
+Hazards are identified and after consideration a Likelihood (L) of occurrence and Severity (S) should they occur is attributed. Controls are put into place resulting in terms of organisation or rules for participants which result in a lower residual Severity and/or Likelihood. Results are summarised in a Risk Assessment Matrix (see below).
+
+In our specific Risk Assessment, the overarching Hazard considered is the acquisition of the covid virus by any person through various vectors as a result of the Volleyball Activity. Therefore, it was considered that it is not possible to reduce the inherent Severity for a specific population. The controls focus on reducing the Likelihood of the Hazard occuring. 
+
+We considered the Severity of covid infection to be a minimum of 4 for the general population with no known underlying condition, and 5 for the at-risk population (elderly, underlying health condition). Hazard with Severity of 5 were dealt with by barring all access to the activity resulting in a Likelihood of 1.
 
 `r if_else(risk_landscape,"\\blandscape","")`
 
