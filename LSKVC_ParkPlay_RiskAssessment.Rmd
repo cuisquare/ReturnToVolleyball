@@ -226,7 +226,7 @@ Those are measures put into place resulting in terms of organisation or rules fo
 
 ## Approach and Choices Made
 
-Hazards are identified and after consideration a Likelihood (L) of occurrence and Severity (S) should they occur is attributed Before and After Controls are put in place. Results are summarised in a Quantitative Risk Assessment Matrix (see below).
+Hazards are identified and after consideration a Likelihood (L) of occurrence and Severity (S) should they occur is attributed Before and After Controls are put in place. Results are summarised in a Quantitative Risk Assessment Matrix (see above).
 
 In our specific Risk Assessment, the overarching Hazard considered is the acquisition of the covid virus by any person through various vectors as a result of the Volleyball Activity. Therefore, it was considered that it is not possible to reduce the inherent Severity for a specific population. The controls focus on reducing the Likelihood of the Hazard occuring. 
 
