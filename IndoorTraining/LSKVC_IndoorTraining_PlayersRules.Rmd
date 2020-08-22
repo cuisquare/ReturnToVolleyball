@@ -1,5 +1,5 @@
 ---
-title: "LSKVC Return to Play (Indoor) Players Rules"
+title: "LSKVC Return to Play (Indoor) Players Rules - Draft"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 
@@ -39,7 +39,7 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 * Let us know you plan to attend the activity, that you opt-in to the present rules and that you have read and understood the risk assessment and agree with the residual risk involved in the activity. This can be made by replying to the GoogleForms check-in sent in your session invite. 
 * You have to provide up to date contact information – mobile number as a minimum - for the purpose of track and trace. This will be done also as part of filling the session check in form. Note that by attending you agree for your personal contact details to be stored and held for 21 days following the activity and will be supplied to NHS Track and Trace/ other relevant public authority if requested to do so
 * Note that if you have not provided the above information (normally by filling in the form), you will not be able to attend. 
-* Numbers are capped at *16 players* and numbers will be managed by the session organiser. This is managed separately from the check-in form and you will receive confirmation whether you are listed that each specific session (this is to avoid going over the numbers), most likely through a Teamer invite but your individual team might do things differently.
+* Numbers are capped at *21 players* and numbers will be managed by the session organiser. This is managed separately from the check-in form and you will receive confirmation whether you are listed that each specific session (this is to avoid going over the numbers), most likely through a Teamer invite but your individual team might do things differently.
 * Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 
 * You should remember to follow all current UK Government guidances (see https://www.gov.uk/coronavirus) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
 * Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20indoor%20volleyball%20-%20risk%20assessment.pdf as well as club specific risk assessment : https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf
