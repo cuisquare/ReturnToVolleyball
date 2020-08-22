@@ -60,9 +60,9 @@ The Risk Assessment is based on:
 
 This Risk Assessment was used to inform the aspects of the **Players Rules** and **Club Requirements** which were specific to our park play activity. Those documents should be read alongside this one. 
 
-The **Players Rules** document is available at *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_PlayersRules.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_PlayersRules.pdf)*.
+The **Players Rules** document is available at *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_PlayersRules.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_PlayersRules.pdf)*.
 
-The **Club Requirements** document is available at  *[https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf)*.
+The **Club Requirements** document is available at  *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_ClubRequirements.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_ClubRequirements.pdf)*.
 
 `r if_else(risk_landscape,"\\blandscape","")`
 
