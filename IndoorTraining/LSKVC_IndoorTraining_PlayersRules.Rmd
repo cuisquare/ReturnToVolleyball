@@ -1,0 +1,62 @@
+---
+title: "LSKVC Return to Play (Indoor) Players Rules"
+author: "Nicolas Vecchione (Powerball Rep)"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r source_functions, echo=FALSE,message=FALSE, warning=FALSE}
+source("ProduceConfigurations.R")
+```
+
+# Motivation {-}
+
+This document aims to support LSKVC in their organisation and running of official LSKVC indoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
+
+The **Players Rules** section outlines behaviour expected from players during lSKVC outdoor play. 
+
+The  Player Rules are made of:
+
+* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
+During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
+* Additional specific rules based on our specific Risk Assessment.
+
+The **Risk Assessment** (available at  *[]()*) must be read and understood alongside those rules. 
+
+The **Club Requirements** (available at  *[]()*) should also be read to be aware of the level of support you can expect during a session.
+
+\newpage
+# Players Rules
+
+## Prior to Activity:
+* Let us know you plan to attend the activity. This can be made by replying to the event created on Facebook. Numbers are capped at *26 players*, if you have not let us know you are coming, you will not be able to attend.
+* Before you attend you need to opt-in to the present rules, confirming that you read and understood them as well as the risk assessment and agree with the residual risk involved in the activity. Please get in touch if you have any issue understanding the documents.
+* Whether in advance or on the day, you have to provide up to date contact information – mobile number as a minimum. This is for track and trace.
+* Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 
+* You should remember to follow all current UK Government guidances (see https://www.gov.uk/coronavirus) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
+* Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf as well as club specific risk assessment : https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf
+* Note that by attending you agree for your personal contact details to be stored and held for 21 days following the activity and will be supplied to NHS Track and Trace/ other relevant public authority if requested to do so
+
+## During Activity:
+* Each player will have to sanitise hands before the start and after the end of each set.
+* Congratulatory touches are not permitted (if you do one by mistake, ask your covid officer to provide hand sanitising or apply some on their request)
+* Players should not to touch their face, mouth, nose or eyes. 
+* Shouting should be avoided (shouting produces aerosol droplets which propagates virus longer and further than normal breathing)
+* Sets will be capped at **15 points** with 2 points difference or first team to 17 points.
+* Each player can play a maximum of **`r round(get_max_nb_sets_per_player(8,6,20,safety_factor,max_exposure))` sets** total if we play 6v6 (*`r round(get_max_nb_sets_per_player(8,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(8,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
+* Any participants not on court must maintain social distancing. Any seating arrangement (where you keep your stuff) should be 2m away from the next persons. 
+* Water and drinks should not be shared
+
+## After the Activity:
+* Sanitise your hands after the completion of activity
+* Leave the playing area whilst maintaining social distancing.
+* If you have not done so yet please provide up to date contact details before leaving. It will be kept for 21 days to provide track and trace 
+* If you develop symptoms and are asked to supply contacts to NHS Track and Trace, the person to contact is the covid officer on the day. If you don't remember who that was, please contact the club secretary secretary@londonspikers.org
+* If you have suggestions on running the session or observed something you think could be improved especially in terms of safety please get in touch with the organisers

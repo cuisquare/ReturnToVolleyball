@@ -1,0 +1,46 @@
+---
+title: "LSKVC Return to Play (Indoor) Logistics Considerations"
+author: "Nicolas Vecchione (Powerball Rep)"
+date: "`r format(Sys.time(), '%d/%m/%Y')`"
+output: 
+  pdf_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Motivation {-}
+
+This document aims to support LSKVC in their organisation and running of official LSKVC indoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
+
+The **Logistics Considerations** contains considerations for us to decide on how we can plan to run the session, volunteers required, etc. 
+
+This document should be read alongside the **Club Requirements**, **Players Rules** and **Risk Assessment** documents. 
+
+The **Risk Assessment** (available at  *[]]()*) must be read and understood alongside this document as the basis for it.
+
+The **Players Rules** (available at *[]]()*) should be read and understood alongside those requirements to understand what will be expected from players in a club run session.
+
+The **Club Requirements** (available at  *[]]()*) should also be read to be aware of the level of support you can expect during a session.
+
+\newpage
+# Logistics Considerations
+
+## General considerations
+
+The session should have a fixed length because of the requirement for the organisers to be there from start to finish – it would not be reasonable to expect organisers to stay on for a session of unknown length. Capping the number of sets per player would also help on that.
+
+The number of users is capped at 30 total by Return to Sport guidance and this include the organisers on the day. The number of players we can take in will depend on how many organisers run the session. I have set the max number of players to 26 reserving effectively 4 spaces for organisers.
+
+The duration of set is not fixed by duration but based on number of points. Namely all calculations use the figure 20 minutes for a set, which should be achieved by setting the max number of points to 15 points (or first team to 17). This should be monitored on the day to see if the assumption holds well.
+
+## Session possible Configurations
+
+The most manageable configuration for players numbers 24 and above uses 2 nets, as it corresponds to shorter sessions.
+
+It would be potentially a good solution to run several sessions per week including mid week for groups of 8-12 people.
+
