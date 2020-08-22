@@ -1,6 +1,6 @@
 options(digits = 2)   # report 3 significant digits
 
-source("Functions.R")
+source("../Functions.R")
 
 shortnames <- c("CaseDesc",
                 "LC",
