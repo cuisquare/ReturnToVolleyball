@@ -21,11 +21,11 @@ The **Logistics Considerations** contains considerations for us to decide on how
 
 This document should be read alongside the **Club Requirements**, **Players Rules** and **Risk Assessment** documents. 
 
-The **Risk Assessment** (available at  *[]]()*) must be read and understood alongside this document as the basis for it.
+The **Risk Assessment** (available at  *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf)*) must be read and understood alongside this document as the basis for it.
 
-The **Players Rules** (available at *[]]()*) should be read and understood alongside those requirements to understand what will be expected from players in a club run session.
+The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_PlayersRules.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_PlayersRules.pdf)*) should be read and understood alongside those requirements to understand what will be expected from players in a club run session.
 
-The **Club Requirements** (available at  *[]]()*) should also be read to be aware of the level of support you can expect during a session.
+The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_ClubRequirements.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_ClubRequirements.pdf)*) should also be read to be aware of the level of support you can expect during a session.
 
 \newpage
 # Logistics Considerations
