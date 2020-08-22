@@ -46,7 +46,7 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 * Check that we have up to date contact details for participants, 
 * appoint a COVID-19 officer who has responsibility to ensure that all mitigating measures and guidance is followed.
 * A risk assessment should have been completed and risk mitigations put in place and monitored. See attached VE risk assessment document.
-* all participants are made aware of expected social distancing and hygiene measures during play and whilst at the venue and makes  the risk assessment available to everyone who attends the event to read. Practically this will done as a clear briefing using the Players Rules document, available at https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_PlayersRules.pdf](https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_PlayersRules.pdf.
+* all participants are made aware of expected social distancing and hygiene measures during play and whilst at the venue and makes  the risk assessment available to everyone who attends the event to read. Practically this will done as a clear briefing using the Players Rules document, available at https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_PlayersRules.pdf.
 
 ## During the activity:
 * Remind verbally the player rules prior to start of play (no celebratory touches, no shouting, no touching own mouth/face/nose/eyes)
