@@ -18,14 +18,14 @@ source("ProduceConfigurations.R")
 
 # Motivation {-}
 
-This document aims to support LSKVC in their organisation and running of official LSKVC indoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
+This document aims to support LSKVC in their organisation and running of official LSKVC Indoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
 
-The **Players Rules** section outlines behaviour expected from players during lSKVC outdoor play. 
+The **Players Rules** section outlines behaviour expected from players during LSKVC Indoor training sessions. 
 
 The  Player Rules are made of:
 
-* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
-During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
+* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Indoor Volleyball Training and Matches
+During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20indoor%20volleyball%20-%20risk%20assessment.pdf))
 * Additional specific rules based on our specific Risk Assessment.
 
 The **Risk Assessment** (available at  *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf)*) must be read and understood alongside those rules. 
@@ -36,23 +36,22 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 # Players Rules
 
 ## Prior to Activity:
-* Let us know you plan to attend the activity. This can be made by replying to the event created on Facebook. Numbers are capped at *26 players*, if you have not let us know you are coming, you will not be able to attend.
-* Before you attend you need to opt-in to the present rules, confirming that you read and understood them as well as the risk assessment and agree with the residual risk involved in the activity. Please get in touch if you have any issue understanding the documents.
-* Whether in advance or on the day, you have to provide up to date contact information – mobile number as a minimum. This is for track and trace.
+* Let us know you plan to attend the activity, that you opt-in to the present rules and that you have read and understood the risk assessment and agree with the residual risk involved in the activity. This can be made by replying to the GoogleForms check-in sent in your session invite. 
+* You have to provide up to date contact information – mobile number as a minimum - for the purpose of track and trace. This will be done also as part of filling the session check in form. Note that by attending you agree for your personal contact details to be stored and held for 21 days following the activity and will be supplied to NHS Track and Trace/ other relevant public authority if requested to do so
+* Note that if you have not provided the above information (normally by filling in the form), you will not be able to attend. 
+* Numbers are capped at *16 players* and numbers will be managed by the session organiser. This is managed separately from the check-in form and you will receive confirmation whether you are listed that each specific session (this is to avoid going over the numbers), most likely through a Teamer invite but your individual team might do things differently.
 * Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 
 * You should remember to follow all current UK Government guidances (see https://www.gov.uk/coronavirus) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
-* Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf as well as club specific risk assessment : https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf
-* Note that by attending you agree for your personal contact details to be stored and held for 21 days following the activity and will be supplied to NHS Track and Trace/ other relevant public authority if requested to do so
+* Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20indoor%20volleyball%20-%20risk%20assessment.pdf as well as club specific risk assessment : https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf
 
 ## During Activity:
-* Each player will have to sanitise hands before the start and after the end of each set.
+* Each player will have to sanitise hands at every water break as directed by coach/covid officer.
 * Congratulatory touches are not permitted (if you do one by mistake, ask your covid officer to provide hand sanitising or apply some on their request)
 * Players should not to touch their face, mouth, nose or eyes. 
 * Shouting should be avoided (shouting produces aerosol droplets which propagates virus longer and further than normal breathing)
-* Sets will be capped at **15 points** with 2 points difference or first team to 17 points.
-* Each player can play a maximum of **`r round(get_max_nb_sets_per_player(8,6,20,safety_factor,max_exposure))` sets** total if we play 6v6 (*`r round(get_max_nb_sets_per_player(8,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(8,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
+* During play similuation part. A player can play a maximum of **`r round(get_max_nb_sets_per_player(9,6,20,safety_factor,max_exposure))` sets** total if we play 6v6 (*`r round(get_max_nb_sets_per_player(9,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(9,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
 * Any participants not on court must maintain social distancing. Any seating arrangement (where you keep your stuff) should be 2m away from the next persons. 
-* Water and drinks should not be shared
+* Water and drinks should not be shared by people from different households
 
 ## After the Activity:
 * Sanitise your hands after the completion of activity

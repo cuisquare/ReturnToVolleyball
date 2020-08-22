@@ -25,8 +25,8 @@ The **Club Requirements** section outlines proposed measures to be put in place 
 
 The Club Requirements are made of:
 
-* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
-During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
+* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Indoor Volleyball Training and Matches
+During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20indoor%20volleyball%20-%20risk%20assessment.pdf))
 * Additional specific rules based on our specific Risk Assessment.
 
 The **Risk Assessment** (available at  *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf)*) must be read and understood alongside this document as the basis for it.
