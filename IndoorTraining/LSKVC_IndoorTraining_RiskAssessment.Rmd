@@ -115,6 +115,21 @@ Hazards <- Hazards %>% add_new_hazard(
   Severity_After = 4)
 
 Hazards <- Hazards %>% add_new_hazard(
+  Hazard="Transfer of virus as a result of contact with indoor facility surfaces",
+  Persons_Affected = c(
+    "Athletes",
+    "Public"),
+  Likelihood_Before = 3,
+  Severity_Before = 4,
+  Controls = c(
+    "Limit the areas of venue accessed and number of times areas are accessed",
+    "Arrive to the venue already changed in terms of underwear /shorts / jersey and carry out finishing touches of changing on court",
+    "Only use changing facilities in and out for hand washing and toilets and not for changing",
+    "Apply hand sanitising upon entering court before using training equipment"),
+  Likelihood_After = 2,
+  Severity_After = 4)
+
+Hazards <- Hazards %>% add_new_hazard(
   Hazard="Transfer of virus as a result of increased interaction between playing and non playing session member",
   Persons_Affected = c(
     "Athletes",
@@ -128,8 +143,6 @@ Hazards <- Hazards %>% add_new_hazard(
     "Non playing attendants and athlete not playing to social distance and stay 2m away from playing area"),
   Likelihood_After = 2,
   Severity_After = 4)
-
-#,
     
 Hazards <- Hazards %>% add_new_hazard(
   Hazard=c(
@@ -140,7 +153,7 @@ Hazards <- Hazards %>% add_new_hazard(
   Severity_Before = 4,
   Controls = c(
     "Carry out conservative Aanalysis on likely exposure duration (see Virus Exposure Analysis) with Analysis to factor in specifics of activity such as the court size, number of players per team with safety factor added - DONE",
-    "Reduce the total duration of play corresponding to an acceptable risk of virus exposure from accumulated proximity DONE",
+    "Reduce the total duration of play sequences corresponding to an acceptable risk of virus exposure from accumulated proximity DONE",
     "Carry out observation of play to determine actual likely exposure and revise propose max duration for the activity accordingly TO BE CARRIED OUT"),
   Likelihood_After = 2,
   Severity_After = 4)
