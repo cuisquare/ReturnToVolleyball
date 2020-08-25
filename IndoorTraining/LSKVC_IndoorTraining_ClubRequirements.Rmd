@@ -37,7 +37,7 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 # Club Requirements 
 
 ## Prior to Activity:
-* Create a Facebook or Teamer event. This event should come with a description of the session.
+* Provide the players with a mean to inform you of their attendance, track and trace information and opt-in for the players rules and risk assessment. This should be obtained without physical paper form to avoid virus transmission. A template for a GoogleForm has been made that fits the requirements.
 * Numbers of players to be capped at **21 players** as decided by MC 18/08/2020. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 30. 
 * The invite should include a link to read the players rules 
 * Roles in setting up /setting down / help run session should be identified
@@ -50,7 +50,7 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 ## During the activity:
 * Remind verbally the player rules prior to start of play (no celebratory touches, no shouting, no touching own mouth/face/nose/eyes)
 * Ensure that the player rules (see link above) are enforced, on penalty of refusing access to players who either refuse or repeatedly neglect to follow the rules
-* Wipe equipment (mainly balls) before and after each set
+* Wipe equipment (mainly balls) before and after each set / at each water break
 * Provide sanitising at any time during the play upon player request
 * Control the length of free play to be within the limits outlined in the Risk Assessment.
 * Control the number of sets played by individual players – maximum of **`r round(get_max_nb_sets_per_player(9,6,20,safety_factor,max_exposure))` sets** if we play 6v6 (*`r round(get_max_nb_sets_per_player(9,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(9,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
