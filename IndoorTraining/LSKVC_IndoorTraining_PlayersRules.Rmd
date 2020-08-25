@@ -42,7 +42,7 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 * Remember to follow all current UK Government guidances (see https://www.gov.uk/coronavirus). This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
 * Bring your own food and drink – water bottles or other refreshment containers should not be shared. 
 * Arrive to the venue already changed and carry out finishing touches of changing on court.
-* Make yourself aware of club specific risk assessment https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf that those rules are based on
+* Make yourself aware of club specific risk assessment (https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf) that those rules are based on
 * Specific indoor venues will have their own risk assessment and rules, which you will have to make yourself aware of when communicated to you. This might include access to the venue, use of changing facilities and access times.
 
 ## During Activity:
