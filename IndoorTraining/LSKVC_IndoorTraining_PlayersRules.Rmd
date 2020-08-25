@@ -53,7 +53,7 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 * Congratulatory touches are not permitted (if you do one by mistake, ask your covid officer to provide hand sanitising or apply some on their request)
 * Players should not to touch their face, mouth, nose or eyes. 
 * Shouting should be avoided (shouting produces aerosol droplets which propagates virus longer and further than normal breathing)
-* Social Play. A player can play a maximum of **`r round(get_max_nb_sets_per_player(9,6,20,safety_factor,max_exposure))` sets** total if we play 6v6 (*`r round(get_max_nb_sets_per_player(9,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(9,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
+* Social Play. A player can play a maximum of **`r round(get_max_nb_sets_per_player(9,6,20,safety_factor,max_exposure))` sets** total if we play 6v6 (*`r round(get_max_nb_sets_per_player(9,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(9,4,20,safety_factor,max_exposure))` sets* total if we play 4v4). Sets to 15 points or first to 17.
 * Any participants not on court must maintain social distancing. Any seating arrangement (where you keep your stuff) should be 2m away from the next persons. 
 * Water and drinks should not be shared by people from different households
 
