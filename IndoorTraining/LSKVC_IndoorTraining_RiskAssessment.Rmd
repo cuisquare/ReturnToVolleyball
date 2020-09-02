@@ -93,7 +93,9 @@ Hazards <- Hazards %>% add_new_hazard(
   Severity_Before = 4,
   Controls = c("No athlete to take part who displays any symptom of covid (persistent cough, fever, loss of smell (see gvt page for more symptoms))",
                "Cleaning and wiping down all equipment with sanitiser before and after each played sets",
-               "Athletes to apply hand sanitiser at regular interval",
+               "For training sessions: Cleaning and wiping down all equipment with sanitiser at start and end of session",
+               "Athletes to apply hand sanitiser when leaving court prior to touching personal belongings",
+               "Athletes to apply hand sanitiser when joining back court after touching personal belongings",
                "Having a limited number of balls to reduce overall risk of transfer"),
   Likelihood_After = 2,
   Severity_After = 4)

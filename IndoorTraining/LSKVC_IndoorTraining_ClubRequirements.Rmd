@@ -50,7 +50,9 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 ## During the activity:
 * Remind verbally the player rules prior to start of play (no celebratory touches, no shouting, no touching own mouth/face/nose/eyes)
 * Ensure that the player rules (see link above) are enforced, on penalty of refusing access to players who either refuse or repeatedly neglect to follow the rules
-* Wipe equipment (mainly balls) before and after each set / at each water break
+* Remind players to sanitise hands on way out from court before touching their belongings, then on way back to court after touching their belongings before handling training equipment.
+* For games: Wipe equipment (mainly balls) before and after each set / at each water break
+* For training session: Wipe balls before start of session and at the end of the session only, if compliance with hand sanitising in/out court is good.
 * Provide sanitising at any time during the play upon player request
 * Control the length of free play to be within the limits outlined in the Risk Assessment.
 * Control the number of sets played by individual players – maximum of **`r round(get_max_nb_sets_per_player(9,6,20,safety_factor,max_exposure))` sets** if we play 6v6 (*`r round(get_max_nb_sets_per_player(9,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(9,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
