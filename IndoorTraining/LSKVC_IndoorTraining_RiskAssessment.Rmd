@@ -139,7 +139,7 @@ Hazards <- Hazards %>% add_new_hazard(
   Likelihood_Before = 3,
   Severity_Before = 4,
   Controls = c(
-    "Limit number of people in session to 16",
+    "Limit number of people in session to 6",
     "Include any non athlete watching (partners, friend) game in total number",
     "If max number is reached only with athlete, non athlete will not be allowed to attend",
     "Non playing attendants and athlete not playing to social distance and stay 2m away from playing area"),
