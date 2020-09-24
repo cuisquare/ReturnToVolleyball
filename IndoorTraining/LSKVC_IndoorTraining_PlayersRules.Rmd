@@ -38,7 +38,7 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 ## Prior to Activity:
 * When requested, let us know you plan to attend the activity, your contact details and confirm you opt-in to the present rules and risk assessment and agree with the residual risk involved in the activity. Note that if you have not provided the above information, you will not be able to attend. 
 * Note that by attending you agree for your personal contact details to be stored and held for 21 days following the activity and will be supplied to NHS Track and Trace/ other relevant public authority if requested to do so.
-* Numbers are capped at *21 players* and numbers will be managed by the session organiser. You will receive confirmation of your spot most likely through a Teamer invite but your individual team might do things differently. Do not come over without that confirmation.
+* Numbers are capped at *6 players* and numbers will be managed by the session organiser. You will receive confirmation of your spot most likely through a Teamer invite but your individual team might do things differently. Do not come over without that confirmation.
 * Remember to follow all current UK Government guidances (see https://www.gov.uk/coronavirus). This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
 * Bring your own food and drink – water bottles or other refreshment containers should not be shared. 
 * Arrive to the venue already changed and carry out finishing touches of changing on court.
@@ -53,7 +53,6 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 * Congratulatory touches are not permitted (if you do one by mistake, ask your covid officer to provide hand sanitising or apply some on their request)
 * Players should not to touch their face, mouth, nose or eyes. 
 * Shouting should be avoided (shouting produces aerosol droplets which propagates virus longer and further than normal breathing)
-* Social Play. A player can play a maximum of **`r round(get_max_nb_sets_per_player(9,6,20,safety_factor,max_exposure))` sets** total if we play 6v6 (*`r round(get_max_nb_sets_per_player(9,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(9,4,20,safety_factor,max_exposure))` sets* total if we play 4v4). Sets to 15 points or first to 17.
 * Any participants not on court must maintain social distancing. Any seating arrangement (where you keep your stuff) should be 2m away from the next persons. 
 * Water and drinks should not be shared by people from different households
 

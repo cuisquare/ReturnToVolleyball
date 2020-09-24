@@ -73,14 +73,27 @@ play_cases_12 <- get_all_new_play_case_input(court_side_list= 9,
 #rename columns
 colnames(play_cases_12) <- shortnames
 
+#6 players case
+play_cases_6 <- get_all_new_play_case_input(court_side_list= 9,
+                                             nb_players_team_list = c(2,3),
+                                             set_duration_list = 20,
+                                             safety_factor_list=safety_factor,
+                                             max_exposure_list=max_exposure,
+                                             nb_players_list=6,
+                                             nb_courts_list=c(1),
+                                             prefix_list = "LSKVC ") %>%
+  add_calculated_values()
+#rename columns
+colnames(play_cases_6) <- shortnames
+
 
 #all configs
 play_cases_all <- get_all_new_play_case_input(court_side_list= 9,
-                                                      nb_players_team_list = c(4,5,6),
+                                                      nb_players_team_list = c(2,3,4,5,6),
                                                       set_duration_list = 20,
                                                       safety_factor_list=safety_factor,
                                                       max_exposure_list=max_exposure,
-                                                      nb_players_list=c(12,16,21),
+                                                      nb_players_list=c(6,12,16,21),
                                                       nb_courts_list=c(1),
                                                       prefix_list = "LSKVC ") %>%
   add_calculated_values()

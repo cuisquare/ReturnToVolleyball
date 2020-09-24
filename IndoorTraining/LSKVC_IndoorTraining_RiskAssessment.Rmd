@@ -314,6 +314,19 @@ kable(x=definitions,caption="Acronyms",format = "latex", booktabs = T,linesep = 
 
 ```
 
+### 6 players
+```{r add_results_table_singlenet_6, echo=FALSE,message=FALSE, warning=FALSE}
+#adding results table
+library(knitr)
+library(kableExtra)
+
+kable(x=play_cases_6,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 12 players") %>%
+  kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
+  add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
+
+``` 
+
+
 ### 21 players
 ```{r add_results_table_singlenet_21, echo=FALSE,message=FALSE, warning=FALSE}
 #adding results table

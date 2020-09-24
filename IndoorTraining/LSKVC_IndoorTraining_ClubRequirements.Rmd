@@ -38,7 +38,7 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 
 ## Prior to Activity:
 * Provide the players with a mean to inform you of their attendance, track and trace information and opt-in for the players rules and risk assessment. This should be obtained without physical paper form to avoid virus transmission. A template for a GoogleForm has been made that fits the requirements.
-* Numbers of players to be capped at **21 players** as decided by MC 18/08/2020. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 30. 
+* Numbers of players to be capped at **6 players** as mandated by gvt directive from 22/09/20. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 6. 
 * The invite should include a link to read the players rules 
 * Roles in setting up /setting down / help run session should be identified
 * Procure hand sanitising bottles sufficient for the activity: one home size bottle for each side of the court, one for the seating area, 3 total. Sanitising wipes might be more practical.
@@ -55,7 +55,7 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 * For training session: Wipe balls before start of session and at the end of the session only, if compliance with hand sanitising in/out court is good.
 * Provide sanitising at any time during the play upon player request
 * Control the length of free play to be within the limits outlined in the Risk Assessment.
-* Control the number of sets played by individual players – maximum of **`r round(get_max_nb_sets_per_player(9,6,20,safety_factor,max_exposure))` sets** if we play 6v6 (*`r round(get_max_nb_sets_per_player(9,5,20,safety_factor,max_exposure))` sets* total if we play 5v5 and *`r round(get_max_nb_sets_per_player(9,4,20,safety_factor,max_exposure))` sets* total if we play 4v4).
+* Control the number of sets played by individual players – maximum of **`r round(get_max_nb_sets_per_player(9,3,20,safety_factor,max_exposure))` sets** if we play 3v3.
 * Control the number of participants. If unregistered participants ask to join on the day, it must be within cap and they must abide by the rules including provide up to date contact information before they can play. It would be easier organisation wise not to allow unregistered players to join the session unless we have enough organisers to provide that service.
 
 ## After the activity:
