@@ -24,8 +24,7 @@ The **Players Rules** section outlines behaviour expected from players during lS
 
 The  Player Rules are made of:
 
-* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
-During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
+* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Return to Outdoor Volleyball" ([link]https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20sport%20specific%20action%20plan.pdf))
 * Additional specific rules based on our specific Risk Assessment.
 
 The **Risk Assessment** (available at  *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_RiskAssessment.pdf)*) must be read and understood alongside those rules. 
@@ -36,12 +35,12 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 # Players Rules
 
 ## Prior to Activity:
-* Let us know you plan to attend the activity. This can be made by replying to the event created on Facebook. Numbers are capped at *26 players*, if you have not let us know you are coming, you will not be able to attend.
+* Let us know you plan to attend the activity. This can be made by replying to the event created on Facebook. Numbers are capped at *28 players* for non organisers with 4 additional spaces reserved for organisers players. If you have not let us know you are coming, you will not be able to attend.
 * Before you attend you need to opt-in to the present rules, confirming that you read and understood them as well as the risk assessment and agree with the residual risk involved in the activity. Please get in touch if you have any issue understanding the documents.
 * Whether in advance or on the day, you have to provide up to date contact information – mobile number as a minimum. This is for track and trace.
 * Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 
 * You should remember to follow all current UK Government guidances (see https://www.gov.uk/coronavirus) This includes most importantly not taking part if you experience any symptoms of Covid19 as well as maintaining social distancing in making your way to the venue.
-* Make yourself aware of the attached risk assessment  that those rules are based on:  https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf as well as club specific risk assessment : https://github.com/cuisquare/ReturnToOutdoorVolleyball/blob/master/LSKVC_ParkPlay_ClubRequirements.pdf
+* Make yourself aware of the attached risk assessment  that those rules are based on: [https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_RiskAssessment.pdf)
 * Note that by attending you agree for your personal contact details to be stored and held for 21 days following the activity and will be supplied to NHS Track and Trace/ other relevant public authority if requested to do so
 
 ## During Activity:

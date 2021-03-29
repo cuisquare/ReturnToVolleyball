@@ -25,8 +25,7 @@ The **Club Requirements** section outlines proposed measures to be put in place 
 
 The Club Requirements are made of:
 
-* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Outdoor Volleyball Training and Matches
-During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20risk%20assessment.pdf))
+* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Return to Outdoor Volleyball" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20outdoor%20volleyball%20-%20sport%20specific%20action%20plan.pdf))
 * Additional specific rules based on our specific Risk Assessment.
 
 The **Risk Assessment** (available at  *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/OutdoorPlay/LSKVC_ParkPlay_RiskAssessment.pdf)*) must be read and understood alongside this document as the basis for it.
@@ -38,7 +37,7 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 
 ## Prior to Activity:
 * Create a Facebook or Teamer event. This event should come with a description of the session.
-* Numbers of players to be capped at **26 players** to allow for 4 spaces reserved for organisers. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 30. 
+* Numbers of players to be capped at **28 players** to allow for 4 spaces reserved for organisers if those organisers are also playing to keep it at 32 players max. If organisers are not playing, the number of players can be increased accordingly to a cap of 32. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 32. 
 * The session should have a clear start and finish set in the facebook/teamer event and be such that club organisers can realistically attend throughout fulfilling their roles managing the session. A reasonable duration would be **4 hours**.
 * The invite should include a link to read the players rules 
 * Roles in setting up /setting down / help run session should be identified
