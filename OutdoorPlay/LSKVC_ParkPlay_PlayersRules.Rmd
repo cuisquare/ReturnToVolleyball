@@ -18,7 +18,7 @@ source("ProduceConfigurations.R")
 
 # Motivation {-}
 
-This document aims to support LSKVC in their organisation and running of official LSKVC outdoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
+This document aims to support LSKVC in their organisation and running of official LSKVC outdoor volleyball sessions returning from the COVID19 hiatus, specifically phase 1b of the 2021 roadmap out of lockdown. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
 
 The **Players Rules** section outlines behaviour expected from players during lSKVC outdoor play. 
 
@@ -36,6 +36,7 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 
 ## Prior to Activity:
 * Let us know you plan to attend the activity. This can be made by replying to the event created on Facebook. Numbers are capped at *28 players* for non organisers with 4 additional spaces reserved for organisers players. If you have not let us know you are coming, you will not be able to attend.
+* No spectators allowed, that mean only players should attend at this stage.
 * Before you attend you need to opt-in to the present rules, confirming that you read and understood them as well as the risk assessment and agree with the residual risk involved in the activity. Please get in touch if you have any issue understanding the documents.
 * Whether in advance or on the day, you have to provide up to date contact information – mobile number as a minimum. This is for track and trace.
 * Individuals should bring their own food and drink – water bottles or other refreshment containers should not be shared. 

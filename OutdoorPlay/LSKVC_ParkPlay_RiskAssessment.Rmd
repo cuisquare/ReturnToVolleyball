@@ -48,7 +48,7 @@ get_col_size_string <- function(col_size_int) {
 
 # Motivation {-}
 
-This document sets out the analysis undertaken in the organisation of LSKVC outdoor volleyball sessions, returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
+This document sets out the analysis undertaken in the organisation of LSKVC outdoor volleyball sessions, returning from the COVID19 hiatus, specifically phase 1b of the 2021 roadmap out of lockdown. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
 
 The **Risk Assessment** outlines the specific risk assessment for our activity on top of the Volleyball England Risk Assessment which is generic (references to the Volleyball England documents are at the end of that section).
 
@@ -72,15 +72,15 @@ The **Club Requirements** document is available at  *[https://github.com/cuisqua
 Hazards <- data.frame()
 
 Hazards <- Hazards %>% add_new_hazard(
-  Hazard="Transfer of virus to at risk population for covid (elderly, underlying health condition)",
+  Hazard="Transfer of virus to at risk population for covid (elderly, underlying health condition who have not been vaccinated)",
   Persons_Affected = c(
     "Athletes",
     "Public"),
   Likelihood_Before = 3,
   Severity_Before = 5,
   Controls = c(
-    "No athlete to take park who is part of at risk population",
-    "No athlete to take part who has regular non socially distant (partner, bubble member) contact with at risk population"),
+    "No athlete to take park who is both part of at risk population and has not been vaccinated",
+    "No athlete to take part who has regular non socially distant (partner, bubble member) contact with someone who is both part of risk population and has not been vaccinated"),
   Likelihood_After = 1,
   Severity_After = 5)
 
@@ -122,10 +122,9 @@ Hazards <- Hazards %>% add_new_hazard(
   Likelihood_Before = 3,
   Severity_Before = 4,
   Controls = c(
-    "Limit number of people in session to 26",
-    "Include any non athlete watching (partners, friend) game in total number",
-    "If max number is reached only with athlete, non athlete will not be allowed to attend",
-    "Non playing attendants and athlete not playing to social distance and stay 2m away from playing area"),
+    "Limit number of people in session to 28 players with 4 spots for player organisers",
+    "Spectators not allowed, only players, substitutes and organisers",
+    "Non playing organisers to social distance and stay 2m away from playing area"),
   Likelihood_After = 2,
   Severity_After = 4)
 
@@ -151,7 +150,7 @@ Hazards <- Hazards %>% add_new_hazard(
   Likelihood_Before = 3,
   Severity_Before = 4,
   Controls = c(
-    "Atheltes to social distance at all times when not playing",
+    "Athletes to social distance at all times when not playing",
     "Athletes to social distance and follow gvt transport guidelines (e.g. wearing mask in public transport) when traveling to and from the venue"),
   Likelihood_After = 2,
   Severity_After = 4)

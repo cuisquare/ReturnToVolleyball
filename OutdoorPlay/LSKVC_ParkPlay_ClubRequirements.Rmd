@@ -19,7 +19,7 @@ source("ProduceConfigurations.R")
 
 # Motivation {-}
 
-This document sets out the obligations of the club in the organisation of LSKVC outdoor volleyball sessions, returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
+This document sets out the obligations of the club in the organisation of LSKVC outdoor volleyball sessions, returning from the COVID19 hiatus, specifically phase 1b of the 2021 roadmap out of lockdown. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
 
 The **Club Requirements** section outlines proposed measures to be put in place by the club in the organisation of outdoor session.
 
@@ -38,6 +38,7 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 ## Prior to Activity:
 * Create a Facebook or Teamer event. This event should come with a description of the session.
 * Numbers of players to be capped at **28 players** to allow for 4 spaces reserved for organisers if those organisers are also playing to keep it at 32 players max. If organisers are not playing, the number of players can be increased accordingly to a cap of 32. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 32. 
+* No spectors will be allowed to attend at this stage (phase 1b of roadmap out of lockdown). 
 * The session should have a clear start and finish set in the facebook/teamer event and be such that club organisers can realistically attend throughout fulfilling their roles managing the session. A reasonable duration would be **4 hours**.
 * The invite should include a link to read the players rules 
 * Roles in setting up /setting down / help run session should be identified

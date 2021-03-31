@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Motivation {-}
 
-This document aims to support LSKVC in their organisation and running of official LSKVC outdoor volleyball sessions returning from the COVID19 hiatus. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
+This document aims to support LSKVC in their organisation and running of official LSKVC outdoor volleyball sessions returning from the COVID19 hiatus, specifically phase 1b of the 2021 roadmap out of lockdown. Its overarching aim is to provide means to reduce the risks of virus propagation, protecting our members and the general population and create the start of a sustainable way to play volleyball during the ongoing pandemic. 
 
 The **Logistics Considerations** contains considerations for us to decide on how we can plan to run the session, volunteers required, etc. 
 
@@ -34,7 +34,7 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 
 The session should have a fixed length because of the requirement for the organisers to be there from start to finish – it would not be reasonable to expect organisers to stay on for a session of unknown length. Capping the number of sets per player would also help on that.
 
-The number of users is capped at 30 total by Return to Sport guidance and this include the organisers on the day. The number of players we can take in will depend on how many organisers run the session. I have set the max number of players to 26 reserving effectively 4 spaces for organisers.
+The number of users is capped at 32 total by Return to Sport guidance and this does not include the organisers on the day if they do not take part in the play. The number of players we can take in will depend on how many player organisers run the session. I have set the max number of players to 28 reserving effectively 4 spaces for player organisers.
 
 The duration of set is not fixed by duration but based on number of points. Namely all calculations use the figure 20 minutes for a set, which should be achieved by setting the max number of points to 15 points (or first team to 17). This should be monitored on the day to see if the assumption holds well.
 
