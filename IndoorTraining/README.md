@@ -1,6 +1,6 @@
 # LSKVC Return To Indoor Volleyball 
 
-R Markdown for Return To Indoor Volleyball Action Plan and Risk Assessment. 
+R Markdown for Return To Indoor Volleyball Action Plan and Risk Assessment covering for the 2021 phase 1b of the roadmap out of lockdown. Of note that at this stage only outdoor play is allowed with indoor play set to resume at earliest on 17th May 2021 therefore the documents below are not to be used until further notice. 
 
 You can download the R markdown files and run the reports as well as make your own changes. 
 
