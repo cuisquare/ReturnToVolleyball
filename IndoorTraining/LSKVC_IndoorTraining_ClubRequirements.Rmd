@@ -1,5 +1,5 @@
 ---
-title: "LSKVC Return to Play (Indoor) Club Requirements - Draft"
+title: "LSKVC Return to Play (Indoor) Club Requirements"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 
@@ -25,8 +25,7 @@ The **Club Requirements** section outlines proposed measures to be put in place 
 
 The Club Requirements are made of:
 
-* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Procedure and Risk Assessments for Indoor Volleyball Training and Matches
-During COVID- 19 Controls" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20indoor%20volleyball%20-%20risk%20assessment.pdf))
+* Rules and obligations as extracted and adapted for our purposes from the Volleyball England document titled "Return to Indoor Volleyball Specific Action Plan" ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20indoor%20volleyball%20-%20sport%20specific%20action%20plan.pdf),  updated 13th May 2021 for step 3 of roadmap out of lockdown)
 * Additional specific rules based on our specific Risk Assessment.
 
 The **Risk Assessment** (available at  *[https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf](https://github.com/cuisquare/ReturnToVolleyball/blob/master/IndoorTraining/LSKVC_IndoorTraining_RiskAssessment.pdf)*) must be read and understood alongside this document as the basis for it.
@@ -38,7 +37,7 @@ The **Players Rules** (available at *[https://github.com/cuisquare/ReturnToVolle
 
 ## Prior to Activity:
 * Provide the players with a mean to inform you of their attendance, track and trace information and opt-in for the players rules and risk assessment. This should be obtained without physical paper form to avoid virus transmission. A template for a GoogleForm has been made that fits the requirements.
-* Numbers of players to be capped at **6 players** as mandated by gvt directive from 22/09/20. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 6. 
+* Numbers of players to be capped at **17 players** per court, following guidelines from Volleyball England. We should turn down on the day any player turning up putting the total numbers of participants (including those who took part and left) to more than 6. 
 * The invite should include a link to read the players rules 
 * Roles in setting up /setting down / help run session should be identified
 * Procure hand sanitising bottles sufficient for the activity: one home size bottle for each side of the court, one for the seating area, 3 total. Sanitising wipes might be more practical.

@@ -1,5 +1,5 @@
 ---
-title: "LSKVC Return to Play (Indoor) Risk Assessment - Draft"
+title: "LSKVC Return to Play (Indoor) Risk Assessment"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 
@@ -54,7 +54,7 @@ The **Risk Assessment** outlines the specific risk assessment for our activity o
 
 The Risk Assessment is based on:
 
-* Volleyball England Return to Indoor Volleyball Specific Action Plan ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20indoor%20volleyball%20-%20sport%20specific%20action%20plan.pdf))
+* Volleyball England Return to Indoor Volleyball Specific Action Plan (updated 13th May 2021 for step 3 of roadmap out of lockdown) ([link](https://media.volleyballengland.org/docs/Return%20to%20play%20indoor%20volleyball%20-%20sport%20specific%20action%20plan.pdf))
 * Return to recreational team sport framework ([link](https://www.gov.uk/government/publications/coronavirus-covid-19-guidance-on-phased-return-of-sport-and-recreation/return-to-recreational-team-sport-framework))
 * Volleyball England Webinar Return to Volleyball held on 06/08/20  ([video link](https://www.youtube.com/watch?v=q2UqqPYtvXs&feature=youtu.be), [slides link](https://media.volleyballengland.org/docs/Return%20to%20play%20club%20webinar%20-%20presentation%20slides.pdf)).
 
@@ -79,8 +79,8 @@ Hazards <- Hazards %>% add_new_hazard(
   Likelihood_Before = 3,
   Severity_Before = 5,
   Controls = c(
-    "No athlete to take part who is part of at risk population",
-    "No athlete to take part who has regular non socially distant (partner, bubble member) contact with at risk population"),
+    "No athlete to take park who is both part of at risk population and has not been vaccinated",
+    "No athlete to take part who has regular non socially distant (partner, bubble member) contact with someone who is both part of risk population and has not been vaccinated"),
   Likelihood_After = 1,
   Severity_After = 5)
 
@@ -139,10 +139,10 @@ Hazards <- Hazards %>% add_new_hazard(
   Likelihood_Before = 3,
   Severity_Before = 4,
   Controls = c(
-    "Limit number of people in session to 6",
+    "Limit number of people in session to 17",
     "Include any non athlete watching (partners, friend) game in total number",
-    "If max number is reached only with athlete, non athlete will not be allowed to attend",
-    "Non playing attendants and athlete not playing to social distance and stay 2m away from playing area"),
+    "If max number is reached only with athlete+officials, non athlete will not be allowed to attend",
+    "Non playing attendants and athlete not playing are to social distance and stay 2m away from playing area"),
   Likelihood_After = 2,
   Severity_After = 4)
     

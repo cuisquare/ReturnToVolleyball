@@ -8,7 +8,7 @@ You can download the R markdown files and run the reports as well as make your o
 
 Two specific activities were considered: 
 
-* [Indoor Training NOT APPLICABLE IN PHASE 1B](https://github.com/cuisquare/ReturnToVolleyball/tree/master/IndoorTraining) 
+* [Indoor Training](https://github.com/cuisquare/ReturnToVolleyball/tree/master/IndoorTraining) 
 * [Park Play](https://github.com/cuisquare/ReturnToVolleyball/tree/master/OutdoorPlay) 
 
 You can find the corresponding markdown files in the folders listed above or following the links.

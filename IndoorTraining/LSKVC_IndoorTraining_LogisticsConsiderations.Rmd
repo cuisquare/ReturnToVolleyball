@@ -1,5 +1,5 @@
 ---
-title: "LSKVC Return to Play (Indoor) Logistics Considerations - Draft"
+title: "LSKVC Return to Play (Indoor) Logistics Considerations"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 
@@ -32,7 +32,7 @@ The **Club Requirements** (available at  *[https://github.com/cuisquare/ReturnTo
 
 ## General considerations
 
-The number of users is capped at 21 total by MC decision 18/08/2020 which is below the 30 max mandated by government guidance and will allow for organiser (coach + covid officer).
+The number of users is capped at 17 total based on volleyball england guidance and this includes any organiser (covid officer as minimum + coach for coached session).
 
 ## Session possible Configurations
 
