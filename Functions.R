@@ -164,6 +164,26 @@ get_kable_bottom_caption <- function(x,caption) {
     xtable2kable()
 }
 
+get_stringfromcharlist <- function(charlist,
+                                   table_ready = TRUE) {
+  if (table_ready) {
+    return(get_tableready_stringfromcharlist(charlist))
+  } else {
+    return(get_csvready_stringfromcharlist(charlist))
+  }
+}
+
+get_csvready_stringfromcharlist <- function(charlist) {
+  list_marker <- "• "
+  Encoding(list_marker) <- "UTF-8"
+  
+  if (length(charlist) > 1) {
+    charlist <- paste(charlist,collapse=";")
+  } 
+  
+  return (charlist)
+}
+
 get_tableready_stringfromcharlist <- function(charlist) {
   list_marker <- "• "
   Encoding(list_marker) <- "UTF-8"
@@ -175,85 +195,85 @@ get_tableready_stringfromcharlist <- function(charlist) {
   return (charlist)
 }
 
-get_new_Hazard <- function(Hazard,
-                           Persons_Affected,
-                           Likelihood_Before,
-                           Severity_Before,
-                           Controls,
-                           Likelihood_After,
-                           Severity_After) {
-  
-  Hazard <- Hazard %>% get_tableready_stringfromcharlist()
-  Persons_Affected <- Persons_Affected %>% get_tableready_stringfromcharlist()
-  Controls <- Controls %>% get_tableready_stringfromcharlist()
-  
-  new_Hazard <- data.frame(Hazard=Hazard,
-                           Persons_Affected=Persons_Affected,
-                           Likelihood_Before=Likelihood_Before,
-                           Severity_Before=Severity_Before,
-                           Risk_Before=0,
-                           Controls=Controls,
-                           Likelihood_After=Likelihood_After,
-                           Severity_After=Severity_After,
-                           Risk_After=0)
-  
-  new_Hazard <- new_Hazard %>% 
-    mutate(Risk_Before  = Likelihood_Before * Severity_Before,
-           Risk_After = Likelihood_After * Severity_After)
-  
-  new_Hazard <- new_Hazard %>%
-    mutate_all(linebreak)
-
-  
-  real_names <- names(new_Hazard) #saving just in case
-  display_names <- c("Hazard",
-                     "Persons Affected",
-                     "L",
-                     "S",
-                     "R",
-                     "Controls",
-                     "L",
-                     "S",
-                     "R"
-  )
-  
-  names(new_Hazard) <- display_names
-  
-  return(new_Hazard)
-}
-
-add_new_hazard <- function(HDF,
-                           Hazard,
-                           Persons_Affected,
-                           Likelihood_Before,
-                           Severity_Before,
-                           Controls,
-                           Likelihood_After,
-                           Severity_After) {
-  
-  new_Hazard <- get_new_Hazard(Hazard,
+get_new_Hazard_RAW <- function(Hazard,
                                Persons_Affected,
                                Likelihood_Before,
                                Severity_Before,
                                Controls,
                                Likelihood_After,
-                               Severity_After)
+                               Severity_After) {
+  return(list(Hazard = Hazard,
+              Persons_Affected = Persons_Affected,
+              Likelihood_Before = Likelihood_Before,
+              Severity_Before = Severity_Before,
+              Controls = Controls,
+              Likelihood_After = Likelihood_After,
+              Severity_After = Severity_After))
+}
+
+get_new_Hazard <- function(raw_Hazard,
+                           table_ready = TRUE) {
+
+  raw_Hazard$Hazard <- raw_Hazard$Hazard %>% get_stringfromcharlist(table_ready)
+  raw_Hazard$Persons_Affected <- raw_Hazard$Persons_Affected %>% get_stringfromcharlist(table_ready)
+  raw_Hazard$Controls <- raw_Hazard$Controls %>% get_stringfromcharlist(table_ready)
+
+  new_Hazard <- data.frame(Hazard=raw_Hazard$Hazard,
+                           Persons_Affected=raw_Hazard$Persons_Affected,
+                           Likelihood_Before=raw_Hazard$Likelihood_Before,
+                           Severity_Before=raw_Hazard$Severity_Before,
+                           Risk_Before=0,
+                           Controls=raw_Hazard$Controls,
+                           Likelihood_After=raw_Hazard$Likelihood_After,
+                           Severity_After=raw_Hazard$Severity_After,
+                           Risk_After=0)
+
+  new_Hazard <- new_Hazard %>%
+    mutate(Risk_Before  = Likelihood_Before * Severity_Before,
+           Risk_After = Likelihood_After * Severity_After)
+
+  new_Hazard <- new_Hazard %>%
+    mutate_all(linebreak)
+
+
+  
+  if (table_ready) {
+    #real_names <- names(new_Hazard) #saving just in case
+    # display_names <- c("Hazard",
+    #                    "Persons Affected",
+    #                    "L-b",
+    #                    "S-b",
+    #                    "R-b",
+    #                    "Controls",
+    #                    "L-a",
+    #                    "S-a",
+    #                    "R-a"
+    #                    )
+    # display_names <- c("Hazard",
+    #                    "Persons Affected",
+    #                    "L",
+    #                    "S",
+    #                    "R",
+    #                    "Controls",
+    #                    "L",
+    #                    "S",
+    #                    "R"
+    #)
+    #names(new_Hazard) <- display_names
+  } 
+
+  return(new_Hazard)
+}
+
+add_new_hazard <- function(HDF, 
+                           raw_Hazard,
+                           table_ready = TRUE) {
+  
+  new_Hazard <- get_new_Hazard(raw_Hazard,
+                               table_ready)
   
   HDF <- HDF %>%
     bind_rows(new_Hazard)
-  
-  display_names <- c("Hazard",
-                     "Persons Affected",
-                     "L",
-                     "S",
-                     "R",
-                     "Controls",
-                     "L",
-                     "S",
-                     "R"
-  )
-  
-  names(HDF) <- display_names
   
   return(HDF)
 }

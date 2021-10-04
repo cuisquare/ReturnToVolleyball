@@ -8,7 +8,7 @@ output:
     toc_depth: 2
     number_sections: true
     includes:
-            in_header: header.tex 
+      in_header: header.tex 
 ---
 
 ```{r setup, include=FALSE}
@@ -19,7 +19,7 @@ knitr::opts_chunk$set(echo = TRUE)
 source("ProduceConfigurations.R")
 ```
 
-```{r risk_table_setup, echo=FALSE,message=FALSE, warning=FALSE}
+```{r risktablesetup, echo=FALSE,message=FALSE, warning=FALSE}
 
 risk_landscape <- TRUE #if set to true the risk assessment table will be in landscape mode
 
@@ -67,11 +67,12 @@ The **Club Requirements** document is available at  *[https://github.com/cuisqua
 `r if_else(risk_landscape,"\\blandscape","")`
 
 # Quantitative Risk Assessment Matrix
-```{r risk_assessment_risks, echo=FALSE,message=FALSE, warning=FALSE}
+```{r riskassessmentrisks, echo=FALSE,message=FALSE, warning=FALSE}
 
-Hazards <- data.frame()
+Hazards_tableready <- data.frame()
+Hazards_csvready <- data.frame()
 
-Hazards <- Hazards %>% add_new_hazard(
+raw_hazard <- get_new_Hazard_RAW(
   Hazard="Transfer of virus to at risk population for covid (elderly, underlying health condition)",
   Persons_Affected = c(
     "Athletes",
@@ -83,24 +84,30 @@ Hazards <- Hazards %>% add_new_hazard(
     "No athlete to take part who has regular non socially distant (partner, bubble member) contact with someone who is both part of risk population and has not been vaccinated"),
   Likelihood_After = 1,
   Severity_After = 5)
+Hazards_tableready <- Hazards_tableready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = TRUE)
+Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = FALSE)
 
-Hazards <- Hazards %>% add_new_hazard(
-  Hazard="Transfer of virus via equipment used in session",
-  Persons_Affected = c(
-    "Athletes",
-    "Public"),
-  Likelihood_Before = 3,
-  Severity_Before = 4,
-  Controls = c("No athlete to take part who displays any symptom of covid (persistent cough, fever, loss of smell (see gvt page for more symptoms))",
-               "Cleaning and wiping down all equipment with sanitiser before and after each played sets",
-               "For training sessions: Cleaning and wiping down all equipment with sanitiser at start and end of session",
-               "Athletes to apply hand sanitiser when leaving court prior to touching personal belongings",
-               "Athletes to apply hand sanitiser when joining back court after touching personal belongings",
-               "Having a limited number of balls to reduce overall risk of transfer"),
-  Likelihood_After = 2,
-  Severity_After = 4)
 
-Hazards <- Hazards %>% add_new_hazard(
+raw_hazard <- get_new_Hazard_RAW(
+    Hazard="Transfer of virus via equipment used in session",
+    Persons_Affected = c(
+      "Athletes",
+      "Public"),
+    Likelihood_Before = 3,
+    Severity_Before = 4,
+    Controls = c("No athlete to take part who displays any symptom of covid (persistent cough, fever, loss of smell (see gvt page for more symptoms))",
+                 "Cleaning and wiping down all equipment with sanitiser before and after each played sets",
+                 "For training sessions: Cleaning and wiping down all equipment with sanitiser at start and end of session",
+                 "Athletes to apply hand sanitiser when leaving court prior to touching personal belongings",
+                 "Athletes to apply hand sanitiser when joining back court after touching personal belongings",
+                 "Having a limited number of balls to reduce overall risk of transfer"),
+    Likelihood_After = 2,
+    Severity_After = 4
+    )
+Hazards_tableready <- Hazards_tableready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = TRUE)
+Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = FALSE)
+
+raw_hazard <- get_new_Hazard_RAW(
   Hazard="Transfer of virus as a result of increased interaction between athletes",
   Persons_Affected = c(
     "Athletes",
@@ -115,8 +122,10 @@ Hazards <- Hazards %>% add_new_hazard(
     "Athletes to keep their belongings at least two metres apart."),
   Likelihood_After = 2,
   Severity_After = 4)
+Hazards_tableready <- Hazards_tableready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = TRUE)
+Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = FALSE)
 
-Hazards <- Hazards %>% add_new_hazard(
+raw_hazard <- get_new_Hazard_RAW(
   Hazard="Transfer of virus as a result of contact with indoor facility surfaces",
   Persons_Affected = c(
     "Athletes",
@@ -130,8 +139,10 @@ Hazards <- Hazards %>% add_new_hazard(
     "Apply hand sanitising upon entering court before using training equipment"),
   Likelihood_After = 2,
   Severity_After = 4)
+Hazards_tableready <- Hazards_tableready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = TRUE)
+Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = FALSE)
 
-Hazards <- Hazards %>% add_new_hazard(
+raw_hazard <- get_new_Hazard_RAW(
   Hazard="Transfer of virus as a result of increased interaction between playing and non playing session member",
   Persons_Affected = c(
     "Athletes",
@@ -145,8 +156,10 @@ Hazards <- Hazards %>% add_new_hazard(
     "Non playing attendants and athlete not playing are to social distance and stay 2m away from playing area"),
   Likelihood_After = 2,
   Severity_After = 4)
-    
-Hazards <- Hazards %>% add_new_hazard(
+Hazards_tableready <- Hazards_tableready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = TRUE)
+Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = FALSE)
+
+raw_hazard <- get_new_Hazard_RAW(
   Hazard=c(
     "Virus acquisition during play due to the accumulation of close proximity duration created by the activity.",
     "Increased exposure due to play being scrappier compared to competitive game as used in Volleyball England to demonstrate exposure duration constitutes medium risk"),
@@ -159,8 +172,10 @@ Hazards <- Hazards %>% add_new_hazard(
     "Carry out observation of play to determine actual likely exposure and revise propose max duration for the activity accordingly TO BE CARRIED OUT"),
   Likelihood_After = 2,
   Severity_After = 4)
+Hazards_tableready <- Hazards_tableready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = TRUE)
+Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = FALSE)
 
-Hazards <- Hazards %>% add_new_hazard(
+raw_hazard <- get_new_Hazard_RAW(
   Hazard="Transfer of virus from athletes to general public ",
   Persons_Affected = "Public",
   Likelihood_Before = 3,
@@ -170,8 +185,12 @@ Hazards <- Hazards %>% add_new_hazard(
     "Athletes to social distance and follow gvt transport guidelines (e.g. wearing mask in public transport) when traveling to and from the venue"),
   Likelihood_After = 2,
   Severity_After = 4)
+Hazards_tableready <- Hazards_tableready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = TRUE)
+Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,table_ready = FALSE)
+
 
 ```
+
 
 ```{r risk_assessment_table, echo=FALSE,message=FALSE, warning=FALSE}
 
@@ -179,12 +198,22 @@ library(knitr)
 devtools::dev_mode(on=T)
 #devtools::install_github("haozhu233/kableExtra")
 library(kableExtra)
-Hazards %>%
-  kable("latex", 
+display_names <- c("Hazard",
+                   "Persons Affected",
+                   "L",
+                   "S",
+                   "R",
+                   "Controls",
+                   "L",
+                   "S",
+                   "R")
+Hazards_tableready %>%
+  kable(format = "latex",
         caption="Risk Assessment Indoor Training",
         escape = F,
-        longtable = T) %>%
-  kable_styling(full_width = F) %>%  
+        longtable = T,
+        col.names = display_names) %>%
+  kable_styling(full_width = F) %>%
   column_spec(1, width = get_col_size_string(col_size_hazards),border_left=T) %>%
   column_spec(2, width = get_col_size_string(col_size_medium))%>%
   column_spec(3, width = get_col_size_string(col_size_small))%>%
@@ -196,9 +225,15 @@ Hazards %>%
   column_spec(9, width = get_col_size_string(col_size_small),border_right = T) %>%
   kable_styling(latex_options = c("striped", "HOLD_position","repeat_header"),
                 repeat_header_continued = T) %>%
-  add_header_above(c(" " = 1," " = 1, "Before" = 3," " = 1, "After" = 3),line=T,border_left=T,border_right = T) #%>%  row_spec(0, angle = 90) 
-devtools::dev_mode(on=F) 
+  add_header_above(c(" " = 1," " = 1, "Before" = 3," " = 1, "After" = 3),line=T,border_left=T,border_right = T) #%>%  row_spec(0, angle = 90)
+devtools::dev_mode(on=F)
 ```
+
+```{r, echo=FALSE,message=FALSE, warning=FALSE}
+#save table to a separate file 
+Hazards_csvready %>% write_csv(file = "IndoorTraining_RiskAssessmentMatrix.csv")
+```
+
 
 `r if_else(risk_landscape,"\\elandscape","")`
 
