@@ -3,6 +3,10 @@ title: "LSKVC Return to Play (Indoor) Club Requirements"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 
+  word_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
   pdf_document:
     toc: true
     toc_depth: 2

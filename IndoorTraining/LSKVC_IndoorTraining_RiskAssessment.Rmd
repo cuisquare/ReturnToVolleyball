@@ -3,6 +3,10 @@ title: "LSKVC Return to Play (Indoor) Risk Assessment"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
 output: 
+  word_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
   pdf_document:
     toc: true
     toc_depth: 2
@@ -38,7 +42,7 @@ if (risk_landscape) {
 }
 
 col_size_medium <- 5
-col_size_small <- 0.5
+col_size_small <- 1#0.5
 
 get_col_size_string <- function(col_size_int) {
   col_size_string <- paste(col_size_int,"em",sep="")
@@ -196,7 +200,7 @@ Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,
 
 library(knitr)
 devtools::dev_mode(on=T)
-#devtools::install_github("haozhu233/kableExtra")
+devtools::install_github("haozhu233/kableExtra",upgrade = "never" )
 library(kableExtra)
 display_names <- c("Hazard",
                    "Persons Affected",
