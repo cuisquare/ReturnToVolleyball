@@ -2,11 +2,12 @@
 title: "LSKVC Return to Play (Indoor) Risk Assessment"
 author: "Nicolas Vecchione (Powerball Rep)"
 date: "`r format(Sys.time(), '%d/%m/%Y')`"
-output: 
-  word_document:
-    toc: true
-    toc_depth: 2
-    number_sections: true
+output:
+  # word_document:
+  #   toc: true
+  #   toc_depth: 2
+  #   number_sections: true
+  #   reference_docx: LSVCDocumentationWordTemplate.docx
   pdf_document:
     toc: true
     toc_depth: 2
@@ -16,6 +17,8 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+library(bookdown)
+library(tinytex)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -42,7 +45,7 @@ if (risk_landscape) {
 }
 
 col_size_medium <- 5
-col_size_small <- 1#0.5
+col_size_small <- 1 #0.5
 
 get_col_size_string <- function(col_size_int) {
   col_size_string <- paste(col_size_int,"em",sep="")
@@ -200,8 +203,12 @@ Hazards_csvready <- Hazards_csvready %>% add_new_hazard(raw_Hazard = raw_hazard,
 
 library(knitr)
 devtools::dev_mode(on=T)
-devtools::install_github("haozhu233/kableExtra",upgrade = "never" )
+#devtools::install_github("haozhu233/kableExtra",upgrade = "never" )
 library(kableExtra)
+
+
+if(is_latex_output()) {
+ 
 display_names <- c("Hazard",
                    "Persons Affected",
                    "L",
@@ -230,6 +237,13 @@ Hazards_tableready %>%
   kable_styling(latex_options = c("striped", "HOLD_position","repeat_header"),
                 repeat_header_continued = T) %>%
   add_header_above(c(" " = 1," " = 1, "Before" = 3," " = 1, "After" = 3),line=T,border_left=T,border_right = T) #%>%  row_spec(0, angle = 90)
+} else {
+  kable(x=Hazards_csvready,
+        caption="Risk Assessment Indoor Training",
+        align="l",
+        format="simple") 
+}
+
 devtools::dev_mode(on=F)
 ```
 
@@ -348,8 +362,16 @@ Please use the column NSM for the maximum recommended number of sets per player 
 #adding abbreviation table
 library(knitr)
 library(kableExtra)
-kable(x=definitions,caption="Acronyms",format = "latex", booktabs = T,linesep = "") %>%
-  kable_styling(latex_options = c("striped", "hold_position"))
+
+if(is_latex_output()) {
+  kable(x=definitions,caption="Acronyms",format = "latex", booktabs = T,linesep = "") %>%
+    kable_styling(latex_options = c("striped", "hold_position"))
+} else {
+  kable(x=definitions,
+        caption="Acronyms",
+        align="c",
+        format="simple") 
+}
 
 ```
 
@@ -359,10 +381,16 @@ kable(x=definitions,caption="Acronyms",format = "latex", booktabs = T,linesep = 
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_6,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 12 players") %>%
+if(is_latex_output()) {
+  kable(x=play_cases_6,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 6 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
-
+} else {
+  kable(x=play_cases_6,
+        caption="Indoor GamePlay Configurations - 6 players",
+        align="c",
+        format="simple") 
+}
 ``` 
 
 
@@ -372,9 +400,16 @@ kable(x=play_cases_6,format = "latex", booktabs = T,linesep = "",caption="Indoor
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_21,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 21 players") %>%
+if(is_latex_output()) {
+  kable(x=play_cases_21,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 21 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
+} else {
+  kable(x=play_cases_21,
+        caption="Indoor GamePlay Configurations - 12 players",
+        align="c",
+        format="simple") 
+}
 
 ``` 
 
@@ -384,10 +419,16 @@ kable(x=play_cases_21,format = "latex", booktabs = T,linesep = "",caption="Indoo
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_12,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 16 players") %>%
+if(is_latex_output()) {
+ kable(x=play_cases_16,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 16 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
-
+} else {
+  kable(x=play_cases_16,
+        caption="Indoor GamePlay Configurations - 16 players",
+        align="c",
+        format="simple") 
+}
 ``` 
 
 
@@ -397,10 +438,16 @@ kable(x=play_cases_12,format = "latex", booktabs = T,linesep = "",caption="Indoo
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_12,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 12 players") %>%
+if(is_latex_output()) {
+ kable(x=play_cases_12,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - 12 players") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #%>%  landscape()
-
+} else {
+  kable(x=play_cases_12,
+        caption="Indoor GamePlay Configurations - 12 players",
+        align="c",
+        format="simple") 
+}
 ``` 
 
 ### All configurations
@@ -410,9 +457,18 @@ kable(x=play_cases_12,format = "latex", booktabs = T,linesep = "",caption="Indoo
 library(knitr)
 library(kableExtra)
 
-kable(x=play_cases_all,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - All") %>%
+if(is_latex_output()) {
+ kable(x=play_cases_all,format = "latex", booktabs = T,linesep = "",caption="Indoor GamePlay Configurations - All") %>%
   kable_styling(latex_options = c("striped", "scale_down", "HOLD_position","repeat_header"))%>%
   add_header_above(c(" " = 1, "Inputs" = 7, "Ouputs" = 4)) #, longtable = T
+} else {
+  kable(x=play_cases_all,
+        caption="Indoor GamePlay Configurations - All",
+        align="c",
+        format="simple") 
+}
+
+
 
 ``` 
 

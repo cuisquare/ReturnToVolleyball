@@ -277,3 +277,16 @@ add_new_hazard <- function(HDF,
   
   return(HDF)
 }
+
+DisplayTableRMD <- function(x, caption,align="l") {
+  if(knitr::is_html_output()) {
+    knitr::kable(x=x,
+                 caption=caption) %>%
+      kableExtra::kable_styling(latex_options = c("striped", "HOLD_position"),full_width =F)
+  } else {
+    knitr::kable(x=x,
+                 caption=caption,
+                 align=align,
+                 format="simple")                  
+  }
+}
